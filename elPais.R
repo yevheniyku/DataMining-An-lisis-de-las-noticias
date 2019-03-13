@@ -38,6 +38,25 @@ while(start <= endDate){
   # hacemos la peticion
   page <- read_html(final)
   
+  # guardamos los titulos de todos los articulos 
+  allTitles <- html_nodes(page, '.articulo-titulo')
+  print(allTitles)
+  
+  while (length(html_nodes(page, '.paginacion-siguiente')) != 0){
+    # sacamos la url de la siguiente pagina
+    nextPage  <- html_nodes(page, '.paginacion-siguiente') %>% html_nodes('a') %>% html_attr('href')
+    
+    page <- jump_to(nextPage) %>% read_html()
+    
+    allTitles <- html_nodes(page, '.articulo-titulo')
+    print(allTitles)
+    class(allTitles)
+  }
+  
+  # de cada titulo sacamos los enlaces 
+  links <- allTitles %>% html_nodes('a') %>% html_attr('href')
+
+  
   #incrementamos la fecha 
   start <- start+1
 }
