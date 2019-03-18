@@ -15,6 +15,8 @@ if (!is.installed("rvest")){
 }
 
 library(rvest)
+library(rlist)
+library(httr)
 
 # guardamos la url base de el Pais
 urlElPais <- 'https://elpais.com/tag/fecha/'
@@ -25,38 +27,45 @@ start <- format(startDate, format="%d-%m-%Y")
 # guardamos y le damos formato a la ultima fecha de webscrapping 
 # que corresponde al dia de hoy
 endDate <- Sys.Date()
-endDate <- format(endDate, format="%d-%m-%Y")
+end <- format(endDate, format="%d-%m-%Y")
 
 # recorremos todas las fechas   
-while(start <= endDate){
-  
-  date <- as.Date(start, format="%d-%m-%Y")
-  urlDate <- format(date, format="%Y%m%d")
-  # generamos la url con la fecha
-  final <- paste0(urlElPais, urlDate)
-  
-  # hacemos la peticion
-  page <- read_html(final)
-  
-  # guardamos los titulos de todos los articulos 
-  allTitles <- html_nodes(page, '.articulo-titulo')
-  print(allTitles)
-  
-  while (length(html_nodes(page, '.paginacion-siguiente')) != 0){
-    # sacamos la url de la siguiente pagina
-    nextPage  <- html_nodes(page, '.paginacion-siguiente') %>% html_nodes('a') %>% html_attr('href')
+while(startDate <= endDate){
     
-    page <- jump_to(nextPage) %>% read_html()
+    #date <- as.Date(start, format="%d-%m-%Y")
+    urlDate <- format(startDate, format="%Y%m%d")
+    # generamos la url con la fecha
+    finalUrl <- paste0(urlElPais, urlDate)
     
-    allTitles <- html_nodes(page, '.articulo-titulo')
-    print(allTitles)
-    class(allTitles)
-  }
+    if(http_status(GET(finalUrl))[[1]] == "Success"){
+      
+      # hacemos la peticion
+      page <- read_html(finalUrl)
+      session <- html_session(finalUrl)
+      
+      # guardamos los titulos de todos los articulos 
+      listUrl <- list(html_nodes(page, '.articulo-titulo')) #%>% html_nodes('a') %>% html_attr('href'))
+    
+     # print(listUrl)
+      
+      
+      # miramos si existe la clase de "paginacion-siguiente"
+      # para ver si hay mas titulos. si la longitud es 0, es que 
+      # solo hay una pagina con articulos ese dia 
+      while (length(html_nodes(page, '.paginacion-siguiente')) != 0){
+        # sacamos la url de la siguiente pagina
+        nextPage  <- html_nodes(page, '.paginacion-siguiente') %>% html_nodes('a') %>% html_attr('href')
+        
+        page <- jump_to(session, nextPage) %>% read_html()
+        
+        
+        
+        listUrl <- c(listUrl, list(html_nodes(page, '.articulo-titulo'))) #%>% html_nodes('a') %>% html_attr('href'))
+      }
+      print(listUrl)
+    }
   
-  # de cada titulo sacamos los enlaces 
-  links <- allTitles %>% html_nodes('a') %>% html_attr('href')
-
-  
-  #incrementamos la fecha 
-  start <- start+1
+    
+    #incrementamos la fecha 
+    startDate <- startDate + 1
 }
