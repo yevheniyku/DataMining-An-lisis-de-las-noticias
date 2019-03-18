@@ -1,6 +1,8 @@
 ##################################################################
+##
 ## Este script sirve para obtener todos los articulos del archivo 
 ## del periodico el Pais, desde el año 1976 y hasta hoy.
+##
 ##################################################################
 
 ##################################################################
@@ -32,19 +34,12 @@ installLibraries <- function(){
   library(httr)
 }
 
-# guardamos la url base de el Pais
-urlElPais <- 'https://elpais.com/tag/fecha/'
-# guardamos y le damos formato a la fecha inicio del webscrapping 
-startDate <- as.Date("04-05-1976", format="%d-%m-%Y")
-start <- format(startDate, format="%d-%m-%Y")
-
-# guardamos y le damos formato a la ultima fecha de webscrapping 
-# que corresponde al dia de hoy
-endDate <- Sys.Date()
-end <- format(endDate, format="%d-%m-%Y")
-
-# recorremos todas las fechas   
-while(startDate <= endDate){
+##################################################################
+# La funcion que recorre los articulos de El Pais 
+##################################################################
+iterateArticles <- function(startDate, endDate, urlElPais){
+  # recorremos todas las fechas   
+  while(startDate <= endDate){
     #date <- as.Date(start, format="%d-%m-%Y")
     urlDate <- format(startDate, format="%Y%m%d")
     # generamos la url con la fecha
@@ -59,7 +54,7 @@ while(startDate <= endDate){
       session <- html_session(finalUrl)
       # guardamos los titulos de todos los articulos 
       listUrl <- list(html_nodes(page, '.articulo-titulo')) #%>% html_nodes('a') %>% html_attr('href'))
-
+      
       # miramos si existe la clase de "paginacion-siguiente"
       # para ver si hay mas titulos. si la longitud es 0, es que 
       # solo hay una pagina con articulos ese dia 
@@ -77,8 +72,22 @@ while(startDate <= endDate){
     
     #incrementamos la fecha 
     startDate <- startDate + 1
+  }
 }
 
 main <- function(){
   installLibraries()
+  
+  # guardamos la url base de el Pais
+  urlElPais <- 'https://elpais.com/tag/fecha/'
+  # guardamos y le damos formato a la fecha inicio del webscrapping 
+  startDate <- as.Date("04-05-1976", format="%d-%m-%Y")
+  start <- format(startDate, format="%d-%m-%Y")
+  # guardamos y le damos formato a la ultima fecha de webscrapping 
+  # que corresponde al dia de hoy
+  endDate <- Sys.Date()
+  
+  iterateArticles(startDate, endDate, urlElPais)
 }
+
+main()
