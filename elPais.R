@@ -81,18 +81,18 @@ accessArticle <- function(url){
   url <- gsub("//", "https://", url, fixed = TRUE)
   
   newSession <- html_session(url)
-  page <- jump_to(newSession, url)  %>% read_html()
+  page  <- jump_to(newSession, url)  %>% read_html()
   
-  title <- html_node(page, '.articulo-titulo') %>% html_text
+  title <- html_node(page, '.articulo-titulo')      %>% html_text
   date  <- html_node(page, '.articulo-actualizado') %>% html_attr('datetime')
-  text  <- html_node(page, '.articulo-cuerpo')  %>% html_text()
+  text  <- html_node(page, '.articulo-cuerpo')      %>% html_text()
   
-  df <- data.frame(ArticleTitle = toString(title), ArticleDate = date, ArticleBody = toString(text))
+  df <- data.frame(ArticleDate = date, ArticleTitle = toString(title), ArticleBody = toString(text))
   
   print(df)
+  
+  write.table(df, "csv/elpais.csv", sep=",", col.names = FALSE, append = TRUE)
 }
-
-
 
 main <- function(){
   installLibraries()
@@ -105,6 +105,8 @@ main <- function(){
   # guardamos y le damos formato a la ultima fecha de webscrapping 
   # que corresponde al dia de hoy
   endDate <- Sys.Date()
+  # crea un directoryo donde se va a guardar el csv
+  dir.create("csv/", showWarnings = FALSE)
   
   iterateArticles(startDate, endDate, urlElPais)
 }
