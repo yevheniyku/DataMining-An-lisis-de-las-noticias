@@ -39,7 +39,7 @@ installLibraries <- function(){
 ##################################################################
 iterateArticles <- function(startDate, endDate, urlElPais){
   # recorremos todas las fechas   
-  while(startDate <= endDate){
+  #while(startDate <= endDate){
     #date <- as.Date(start, format="%d-%m-%Y")
     urlDate <- format(startDate, format="%Y%m%d")
     # generamos la url con la fecha
@@ -53,7 +53,7 @@ iterateArticles <- function(startDate, endDate, urlElPais){
       page <- read_html(finalUrl)
       session <- html_session(finalUrl)
       # guardamos los titulos de todos los articulos 
-      listUrl <- list(html_nodes(page, '.articulo-titulo')) #%>% html_nodes('a') %>% html_attr('href'))
+      listUrl <- list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href'))
       
       # miramos si existe la clase de "paginacion-siguiente"
       # para ver si hay mas titulos. si la longitud es 0, es que 
@@ -65,15 +65,34 @@ iterateArticles <- function(startDate, endDate, urlElPais){
         page <- jump_to(session, nextPage) %>% read_html()
         # sacamos los articulos de la nueva pagina y los guardamos en 
         # la lista listUrl
-        listUrl <- c(listUrl, list(html_nodes(page, '.articulo-titulo'))) #%>% html_nodes('a') %>% html_attr('href'))
+        listUrl <- c(listUrl, list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href')))
       }
-      print(listUrl)
     }
     
+    for(i in length(listUrl)){
+      lapply(listUrl[[i]], function(x) accessArticle(x))
+    }
     #incrementamos la fecha 
     startDate <- startDate + 1
-  }
+  #}
 }
+
+accessArticle <- function(url){
+  url <- gsub("//", "https://", url, fixed = TRUE)
+  
+  newSession <- html_session(url)
+  page <- jump_to(newSession, url)  %>% read_html()
+  
+  title <- html_node(page, '.articulo-titulo') %>% html_text
+  date  <- html_node(page, '.articulo-actualizado') %>% html_attr('datetime')
+  text  <- html_node(page, '.articulo-cuerpo')  %>% html_text()
+  
+  df <- data.frame(ArticleTitle = toString(title), ArticleDate = date, ArticleBody = toString(text))
+  
+  print(df)
+}
+
+
 
 main <- function(){
   installLibraries()
