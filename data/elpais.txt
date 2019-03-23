@@ -1,18 +1,26 @@
-"1","1976-05-04T00:00:00+02:00","Estanqueros no quieren manifestarse","
+Estanqueros no quieren manifestarse
+1976-05-04T00:00:00+02:00
+
 Un grupo de expendedores de tabaco de Madrid no está de acuerdo con la manifestación convocada para el próximo día 17 por la Junta Directiva, al considerar que ésta no sometió tal decisión a consulta popular en una asamblea, según comunican en una nota dada a los medios informativos.La manifestación se organizó con el fin de apoyar las reivindicaciones de los expendedores y presionar ante la parte empresarial de Tabacalera.
-La protesta de los expendedores, contra la manifestación es porque consideran \"inadecuado\" este procedimiento, \"ya que existen otros medios más eficaces para hacer valer nuestras peticiones, como son los de la negociación que está realizando la agrupación nacional\".
-En la citada nota, los expendedores solicitan a la Junta Directiva que \"si no puede resistir las presiones a que está sometida, ajenas a los intereses de los titulares, dimita en pleno para evitar la innecesaria politización de estos problemas que nunca debieron salir del marco puramente profesional\".
+La protesta de los expendedores, contra la manifestación es porque consideran "inadecuado" este procedimiento, "ya que existen otros medios más eficaces para hacer valer nuestras peticiones, como son los de la negociación que está realizando la agrupación nacional".
+En la citada nota, los expendedores solicitan a la Junta Directiva que "si no puede resistir las presiones a que está sometida, ajenas a los intereses de los titulares, dimita en pleno para evitar la innecesaria politización de estos problemas que nunca debieron salir del marco puramente profesional".
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Ninguna diferencia en el nuevo \"Un, dos, tres...\"","
-¿Existen diferencias entre este Un,dos,tres... y aquel \"Un,dos,tres...\"? Veámoslo. El director es el mismo, también el presentado y el equipo que no se ve, las linda exhibidoras de muslamen están cortadas por el mismo patrón que las anteriores y condenadas al mismo tipo de fama, la estructura de la cosa no ha variado lo más mínimo, el espectáculo final con el suspense del automóvil es idéntico... Rotundamente, el \"Un,dos,tres-\" del Año de Gracia del Reformismo nada tiene que ver con el emitido en el Año de Gracia de la Concurrencia de Pareceres, o de la Trampa Saducea.Por empeñarse en copiar la vieja fórmula sin quitar ni añadir una coma, un plano, por querer plagiarse a sí mismo a falta de nuevas ideas, por intentar huir de toda innovación, no sea el maligno que a los de la tele les metan liebre por gato, Chicho y sus muchachos están consiguiendo un programa- concurso que no resiste la menor comparación con aquel que les hiciera tan populares a pesar de ser el mismo. Esto tiene su mérito.
-¿Pero cuáles son las discrepancias? Por de pronto la peseta, la gran vedette del espacio, ha cambiado: se ha devaluado. Ya no es la misma peseta de entonces. Ni física ni metafísicamente. En segundo lugar, el tiempo no pasa en balde ni para Ibáñez Serrador. Cuando surgió el primer \"Un, dos , tres...\", el país permanecía imbecilizado por decreto-ley. Desde entonces han acontecido un montón de cosas, que han logrado hacer del famoso concurso un producto encantadoramente retro, por no decir estúpidamente subdesarrollado. Cuando en los papeles ni siquiera se podían escribir las siglas de la democracia cristiana, pues nada más normal que nos divirtiéramos como niños de la E.G.B. con tales chorradas. Cuando todo el país está hablando como si tal cosa de la plantajunta y el más lerdo ya distingue a la legua y sobre todo, por la lengua, a un socialista utópico de un socialista apócrifo, y a la derecha, a sus años, le ha entrado la fiebre de la oposición, y el personal no está más que para la política y para despilfarrar los pocos, duros que aún quedan, eso de venimos con el responda otra vez amigo, cuando Kiko grite lo de un,dos,tres, tiene todas las trazas de un suicidio televisual. Un error indigno de un hombre tan astuto como Chicho.
+
+------
+Ninguna diferencia en el nuevo "Un, dos, tres..."
+1976-05-04T00:00:00+02:00
+
+¿Existen diferencias entre este Un,dos,tres... y aquel "Un,dos,tres..."? Veámoslo. El director es el mismo, también el presentado y el equipo que no se ve, las linda exhibidoras de muslamen están cortadas por el mismo patrón que las anteriores y condenadas al mismo tipo de fama, la estructura de la cosa no ha variado lo más mínimo, el espectáculo final con el suspense del automóvil es idéntico... Rotundamente, el "Un,dos,tres-" del Año de Gracia del Reformismo nada tiene que ver con el emitido en el Año de Gracia de la Concurrencia de Pareceres, o de la Trampa Saducea.Por empeñarse en copiar la vieja fórmula sin quitar ni añadir una coma, un plano, por querer plagiarse a sí mismo a falta de nuevas ideas, por intentar huir de toda innovación, no sea el maligno que a los de la tele les metan liebre por gato, Chicho y sus muchachos están consiguiendo un programa- concurso que no resiste la menor comparación con aquel que les hiciera tan populares a pesar de ser el mismo. Esto tiene su mérito.
+¿Pero cuáles son las discrepancias? Por de pronto la peseta, la gran vedette del espacio, ha cambiado: se ha devaluado. Ya no es la misma peseta de entonces. Ni física ni metafísicamente. En segundo lugar, el tiempo no pasa en balde ni para Ibáñez Serrador. Cuando surgió el primer "Un, dos , tres...", el país permanecía imbecilizado por decreto-ley. Desde entonces han acontecido un montón de cosas, que han logrado hacer del famoso concurso un producto encantadoramente retro, por no decir estúpidamente subdesarrollado. Cuando en los papeles ni siquiera se podían escribir las siglas de la democracia cristiana, pues nada más normal que nos divirtiéramos como niños de la E.G.B. con tales chorradas. Cuando todo el país está hablando como si tal cosa de la plantajunta y el más lerdo ya distingue a la legua y sobre todo, por la lengua, a un socialista utópico de un socialista apócrifo, y a la derecha, a sus años, le ha entrado la fiebre de la oposición, y el personal no está más que para la política y para despilfarrar los pocos, duros que aún quedan, eso de venimos con el responda otra vez amigo, cuando Kiko grite lo de un,dos,tres, tiene todas las trazas de un suicidio televisual. Un error indigno de un hombre tan astuto como Chicho.
 Lo que ha variado, mayormente, ha sido el contexto y, como decimos los borgianos empedernidos, no es lo mismo escribir El Quijote en el siglo de Cervantes que en el lustro de Pierre Menard. Porque, repetir en otro tiempo un espacio preexistente constituye una complejísima empresa neoplatónica que no se puede resolver por el facilón método de halagar las bajas pasiones o sea, las pasiones del bolsillo y las de al lado del bolsillo. El señor Ibáñez Serrador, en lugar de enriquecer el texto primordial, como hiciera el señor Menard con la fama de Cervantes, ha conseguido destrozarlo para siempre jamás. Claro que acaso haya que interpretar la decisión según aquella conocida máxima de los antiguos: similia similibus curantur: los programas televisuales semejantes se curan por medio de otros semejantes.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Negativa empresarial a negociar el convenio de químicas","
+
+------
+Negativa empresarial a negociar el convenio de químicas
+1976-05-04T00:00:00+02:00
+
 La comisión deliberadora que, en representación de los casi sesenta mil trabajadores que integran el sector químico en Madrid y su provincia, pretende negociar con la representación económica un convenio único para el sector, acordó ayer convocar a la Junta General de la UTT de Químicas para tratar de las medidas a adoptar ante la negativa de los empresarios a entablar negociaciones.Ante la reiterada negativa de la representación social a comenzar las deliberaciones, los trabajadores propondrán a la UTT «la ruptura sindical, ante la ausencia de fuerza del sindicato oficial para hacer sentarse en la mesa de negociaciones a la patronal», informaron a EL PAIS fuentes laborales.
 Asimismo, la representación social acordó continuar con los paros intermitentes que iniciaron la pasada semana, como medio de presión para la negociación del convenio, que afectará a 1.023 empresas.
 La plataforma reivindicativa supone un salario mínimo mensual de 25.000 pesetas, además de un incremento lineal no inferior a las 6.000 pesetas; exención del IRTP hasta 400.000 pesetas; vacaciones anuales de 30 días y jornada laboral de 40 horas mensuales.
@@ -21,12 +29,15 @@ Comienza el estudio con la exposición de características que definen el sector
 Los procesos productivos del sector se caracterizan, en general, por su elevado coste en cuanto a materias primas se refiere, ya que suponen entre el 40 y el 70 por ciento de los costes totales, mientras que los costes de la mano de obra sólo representan el 20 por ciento de los costes totales, en el mejor de los casos.
 «El sector químico en España está dominado por la empresa extranjera -dice el estudio- que llega incluso la participar en más del 50 por ciento de algunas industrias, lo que demuestra que la actuación de estas industrias no tiene porqué verse afectada por coyunturas desfavorables de la economía nacional, ya que las empresas multinacionales de las que dependen tienen suficiente capacidad de adaptación».
 Agrega el estudio que las características de este sector han permitido que las empresas multinacionales se hayan enriquecido a costa de las ventajas que España ofrece al inversor extranjero, concretadas en: pocos impuestos y facilidad para evadirlos; bajo coste de la mano de obra; poca competencia interna, que les han permitido actuar según sus intereses, y ayudas o subvenciones para la instalación de industrias, que figuran como industrias nacionales.
-En relación con la reivindicación de que la Seguridad Social sea abonada íntegramente por las empresas, el estudio explica que, si bien, por ejemplo, en 1072 el 73 por ciento de los ingresos de la Seguridad Social fue aportado por los empresarios, frente al 18 por ciento que cotizaron los trabajadores, tal proporción no responde a la realidad, pues «lo que la empresa paga a la Seguridad Social es simplemente un coste más del factor trabajó, es decir, que al empresario le \"cuesta\" un obrero lo que le paga como salario más lo que paga a la Seguridad Social».
+En relación con la reivindicación de que la Seguridad Social sea abonada íntegramente por las empresas, el estudio explica que, si bien, por ejemplo, en 1072 el 73 por ciento de los ingresos de la Seguridad Social fue aportado por los empresarios, frente al 18 por ciento que cotizaron los trabajadores, tal proporción no responde a la realidad, pues «lo que la empresa paga a la Seguridad Social es simplemente un coste más del factor trabajó, es decir, que al empresario le "cuesta" un obrero lo que le paga como salario más lo que paga a la Seguridad Social».
 Acerca de la exención del impuesto sobre el rendimiento del trabajo personal (IRTP) hasta 400.000 pesetas, el estudio hace un detallado análisis del sistema tributarlo español, «en el que la imposición es altamente regresiva de acuerdo con los enormes desniveles de renta que conviven en nuestro país», y propugna una profunda reforma del sistema fiscal, que acabe con la tradicional práctica de que «el trabajador sea siempre el objetivo sencillo de la finalidad recaudatoria».
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","La descalificación de Hunt dio el triunfo a Lauda","
+
+------
+La descalificación de Hunt dio el triunfo a Lauda
+1976-05-04T00:00:00+02:00
+
 James Hunt, que había sido el vencedor del G.P. de Fórmula 1 celebrado el domingo en el Jarama, fue descalificado, al comprobarse en la verificación técnica efectuada por los comisarios deportivos que la anchura del eje trasero de su Melaren rebasaba en un centímetros medio, las especificaciones del reglamento internacional de constructores, de Fórmula 1.También fue descalificado el piloto francés Jacques Lafite al comprobarse que la altura del alerón trasero del Matra sobrepasaba en tres centímetros las medidas reglamentarias.
 Esta decisión, que fue tomada después de largas deliberaciones de los miembros de la C.S.I., convirtieron a Niki Lauda, segundo clasificado, en el desarrollo de la prueba, en vencedor de este G.P. de España.
 
@@ -64,19 +75,28 @@ CAMPEONATO DEL MUNDO
 Esta clasificación, por la misma razón que en la del Gran Premio de España, también es provisional.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Todo al sprint","
+
+------
+Todo al sprint
+1976-05-04T00:00:00+02:00
+
 La Vuelta Ciclista a España se está desarrollando en su primera fase de acuerdo con lo previsto. Las primeras etapas son propicias para los triunfos extranjeros al sprint. La fase definitiva de la roda aún no ha llegado. Habrá suelo especial Kas-Super Ser. Saura y Vélez, andan a la greña.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Celso Emilio Ferreiro en la Fundación Juan March","
+
+------
+Celso Emilio Ferreiro en la Fundación Juan March
+1976-05-04T00:00:00+02:00
+
 El próximo viernes, 7 de mayo, en el salón de actos de la Fundación Juan March, y dentro del ciclo Literatura Viva, el poeta gallego Celso Emilio Ferreiro se enfrentará al crítico Basilio Losada, y al público en general actuando de moderador Eugenio de Bustos.
 Celso Emilio Ferreiro es, seguramente, el más importante de los poetas vivos y en habla gallega. Sus libros tocan todos los temas, desde la desgracia del exilio a la dulzura de las verdes tierras, pasando por los viejos dolores del caRec entemente han sido publicadas sus obras completas ( d.Akal, ciquismo y la pobreza, o el traspasamiento lírico y sincero. Ii- E
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","El ministro de Comercio, a Kenya","
+
+------
+El ministro de Comercio, a Kenya
+1976-05-04T00:00:00+02:00
+
 Mañana se reúnen de nuevo países pobres y ricos en el seno de la IV Conferencia de las Naciones Unidas sobre el Comercio y el Desarrollo, que se inicia en Nairobi (Kenya).La UNCTAD -denominación según las siglas inglesas- es una de las conferencias más criticadas por su elevado coste y, por ahora, sus escasos resultados. No obstante, la conciencia que ha creado en el seno de los países subdesarrollados es positiva y ha supuesto un cambio de actitud en el papel de las Naciones Unidas. La Asamblea General de la ONU, y en especial la UNCTAD, son un adecuado foro para el planteamiento de las relaciones entre Tercer Mundo y países industrializados.
 La III Conferencia de la UNCTAD, celebrada en Santiago de Chile en 1972, puso de manifiesto el fracaso del plan de la ONU para las naciones subdesarrolladas. Desde entonces, y en busca de un nuevo orden económico internacional, las Naciones Unidas han abandonado el liberalismo que ha inspirado su actuación desde que se crearon en 1945. No se puede tratar con criterios iguales a países que muestran entre sí grandes desequilibrios.
 La IV Conferencia marca un punto crítico en las relaciones entre países industrializados y el Tercer Mundo, ya que el efecto general de la inflación ha incrementado el coste de los productos manufacturados de las naciones desarrolladas a un ritmo mayor que los precios de las materias primas. El resultado ha sido acentuar la distancia entre pobres y ricos.
@@ -84,20 +104,29 @@ Calvo Sotelo, a la UNCTAD
 Hoy viaja con destino a Nairobi el ministro de Comercio, Leopoldo Calvo Sotelo, al frente de la delegación española. El secretario de Estado norteamericano, Kissinger, ofrecerá un almuerzo a Calvo Sotelo. El día 10, Calvo Sotelo expondrá ante el plenario de la conferencia la posición española ayuda a los países del Tercer Mundo y fomento de las relaciones comerciales como principal medio para ello.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Areilza inicia mañana su visita a Marruecos","
-Mañana, miércoles, inicia su visita oficial a Marruecos el ministro de Asuntos Exteriores, José María de Areilza. La nueva correlación de fuerzas en el Magreb, tras la resolución del problema sahariano, y las \"relaciones privilegiadas\" que España y Marruecos mantienen desde el Tratado de Madrid, hace que el viaje del ministro español sea contemplado con interés y confianza.Diversos problemas de envergadura serán abordados en el curso de esta visita: las expropiaciones de bienes españoles, el problema pesquero, las relaciones comerciales entre los dos países, la cuestión de los fosfatos de Bu-Craa y, probablemente, el contencioso territorial pendiente, es decir, Ceuta, Melilla y \"los peñones\".
+
+------
+Areilza inicia mañana su visita a Marruecos
+1976-05-04T00:00:00+02:00
+
+Mañana, miércoles, inicia su visita oficial a Marruecos el ministro de Asuntos Exteriores, José María de Areilza. La nueva correlación de fuerzas en el Magreb, tras la resolución del problema sahariano, y las "relaciones privilegiadas" que España y Marruecos mantienen desde el Tratado de Madrid, hace que el viaje del ministro español sea contemplado con interés y confianza.Diversos problemas de envergadura serán abordados en el curso de esta visita: las expropiaciones de bienes españoles, el problema pesquero, las relaciones comerciales entre los dos países, la cuestión de los fosfatos de Bu-Craa y, probablemente, el contencioso territorial pendiente, es decir, Ceuta, Melilla y "los peñones".
 El Sahara estará también presente en las conversaciones del señor Areilza con su colega marroquí.
 Información en pág. 8
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Estímulos a la producción de bienes de equipo","
+
+------
+Estímulos a la producción de bienes de equipo
+1976-05-04T00:00:00+02:00
+
 Con objeto de potenciar al máximo la producción nacional de bienes de equipo, el Consejo de Ministros aprobó una propuesta del departamento de Industrias por se sustituye el sistema de exenciones arancelarias para la importación de bienes de equipo por el de subvenciones a nuevas industrias en polos de desarrollo y polígonos industriales.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","La guerra civil en Málaga / 1","
+
+------
+La guerra civil en Málaga / 1
+1976-05-04T00:00:00+02:00
+
 La tarde del sábado 18 de julio cogí el autobús de Málaga para hacer algunas compras. Estaba tan acostumbrado a ver caras tensas y sonrisas heladas, llenas de aprensión, que en un principio no noté nada especial en el ambiente. Después me di cuenta de que los policías en la plaza de la Constitución parecían más nerviosos de lo normal. Estiraban el cuello para mirar calle arriba y calle abajo, se manoseaban los cinturones y uno de ellos estaba decididamente ojeroso. Lo achaqué a que llevaban muchos meses haciendo horas extraordinarias y no dormían lo suficiente.Después de comprar las cosas que necesitaba fui a una librería de la calle Larios, atendida por dos jóvenes muy serios e inmaculadamente vestidos. No tenían el libro que yo quería, una nueva publicación sobre la reforma agraría, así que cogí un ejemplar del diario local El Popular y empecé a leerlo. Los titulares decían: Rebelión militar en Marruecos. Ceuta y Melilla capturadas por los facciosos, pero a continuación venían unas declaraciones tranquilizadoras del primer ministro, Casares Quiroga: «El Gobierno es dueño absoluto de la situación. Nadie, absolutamente nadie en España, ha participado, en! esa absurda conspiración.
 Decidí tomar un café rápidamente, recoger unos pantalones que estaban en el tinte y coger el trenecito para Churriana, antes, de que pasara algo. Pero cuando iba aún camino del café oí la música de una banda y vi al final de la calle un grupo de gente, hombres en su mayor parte, que avanzaban por la Alameda. Más allá venía un a compañía de soldados. Un oficial marchaba delante de ellos mirando al frente, los hombres seguían con las armas al hombro y a continuación venía una banda de música. Detrás la calle estaba abarrotada de obreros, y otros avanzaban junto a los soldados hablando con ellos.
 - ¿Qué Vais a hacer? -preguntaban.
@@ -148,14 +177,20 @@ PROXIMO CAPITULO:
 Queipo de Llano, «estrella» de la radio
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Desaparecerá la Jefatura Nacional del Movimiento","
+
+------
+Desaparecerá la Jefatura Nacional del Movimiento
+1976-05-04T00:00:00+02:00
+
 La agencia Cifra desmintió ayer el contenido de la reforma del sistema parlamentario que había sido anticipado por Europa Press, y asimismo Logos informaba sobre la introducción de varias correcciones en el texto.Contrastada en fuentes solventes la información facilitada sobre este tema en esta misma página, sólo cabe añadir que, según se ha dicho a Cifra, «todo parece indicar que desaparecerá la Jefatura Nacional del Movimiento», cargo éste que según las noticias en poder de EL PAIS continuaría ostentando el presidente del Gobierno, por delegación del Rey.
 Por otra parte, Logos da cuenta de que se ha eliminado «la referencia al mandanto imperativo de los procuradores que habrán de integrar la Cámara baja», así como que, en el plazo de seis meses, el Gobierno regulará las relaciones entre los cuerpos colegisladores.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","\"Takir\" convenció en el Premio Generalísimo","
+
+------
+"Takir" convenció en el Premio Generalísimo
+1976-05-04T00:00:00+02:00
+
 «Takir», por cuerpo y medio de diferencia, se impuso el domingo en el Premio Generalísimo. Catorce caballos tomaron la salida en esta prueba, que resultó reñidísima en todo momento. Los grandes favoritos, «El Gaucho» y «Pentágona», ocuparon las colocaciones.
 Catorce caballos de edad salieron el domingo a la pista de La Zarzuela, a luchar por el triunfo en la XXXV edición del Premio Generalísimo. Esta prueba, como ya recordarán, se venía celebrando la última semana de mayo, pero a partir de ahora se hará en la primera del mes. A pesar de su nuevo emplazamiento y de que su dotación no ha variado, esta carrera sigue manteniendo su solera.La XXXV edición del Generalísimo pasará a la historia como una de las más inciertas a la hora del pronóstico. En anteriores ocasiones siempre los pronósticos se inclinaban por un ejemplar o a lo sumo dos, pero este año los más expertos, por mucho que se empeñaban, no lograban dejar la lista en menos de cinco caballos.
 «Seis Doble» fue el conductor del pelotón durante los dos mil primeros metros. «Takir», «L'Emigrant» y «Néstor» marcharon en las posiciones más inmediatas, pendientes de cualquier posible avanzada. El caballo de la Cuadra Dominó marco un fuerte tren durante todo el recorrido y obligó a varios participantes a realizar un gran esfuerzo y a otros a desistir en su intento de conseguir el triunfo, haciendo una carrera por su cuenta. En la curva del Pardo, cuando ya faltaban muy pocos metros para línea de meta, el caballo de Ramón Beamonte, «Takir», se despegó del resto de sus rivales al ser solicitado por su jinete, Román Martín. «Takir» comenzó a galopar a una gran velocidad, marchando hacia la meta sin que ningún caballo lograse inquietarle en ningún momento. La ventaja del caballo de Beamonte parecía ser cada vez mayor, pero ésta fue rebajada por «Pentágona» y por « El Gaucho », que en su lucha por las colocaciones se acercaron más al ganador. «El Gaucho», con Ceferino Carrasco, fue segundo, mientras era tercero «Pentágona», con Carudel.
@@ -172,14 +207,20 @@ Las múltiples
 Sólo aparecieron cuatro boletos acertantes de la apuesta triple gemela, que cobrarán cada uno un dividendo de 146.422 pesetas. Nada menos que treinta y nueve boletos acretaron la apuesta quíntuple, cada uno de ellos cobrará 48.879 pesetas.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Intentan robar un coche policía","
+
+------
+Intentan robar un coche policía
+1976-05-04T00:00:00+02:00
+
 Dos individuos, al parecer de nacionalidad inglesa, fueron sorprendidos por la Policía Armada cuando intentaban sustraer un Land Rover perteneciente a las citadas fuerzas del orden.No han sido facilitados los nombres de los dos individuos, a quienes les fueron instruidas diligencias por el Juzgado de guardia.
 No obstante, al ser trasladados a la Comisaría de Centro, uno de los detenidos exhibió un permiso de conducir a nombre de Michael Guy Pickard.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Un debate sobre Evangelio y desarme","
+
+------
+Un debate sobre Evangelio y desarme
+1976-05-04T00:00:00+02:00
+
 En el último Congreso nacional francés de Pax Christi se ha puesto una vez más sobre el tapete la cuestión del desarme y de la renuncia a la guerra; pero la noción misma del desarme es inseparable de la noción de seguridad, de una nación o de un bloque de países unidos por una cierta concepción de la vida que ha de ser defendida y puede ser atacada, de modo que el debate sobre el desarme no podía menos de ser antagónico.La imaginación queda prácticamente desbordada y desafiada cuando los técnicos de estadística, nos dicen, por ejemplo, que si los presupuestos de guerra se aplicasen a construir carreteras se podría leyantar inmediatamente un millón de kilómetros de autopistas. A mil billones de francos nuevos se elevó en 1974 el presupuesto bélico de todos los países, y la Unión Soviética gastó cuatrocientos sesenta y cinco mil millones, frente a trescientos cincuenta mil millones los Estados Unidos en esa preparación bélica. Esto quiere decir que no solamente se está preparando minuciosamente el apocalipsis, sino que, además, esa masacre general está costando demasiado cara, como si sé tratase de la utopía más deseable, que ya casi resulta imposible de sostener en su preparación.
 Según la opinión de los técnicos políticos y militares, estos fabulosos gastos, que cada año, además, se multiplican desorbitadamente, puesto que cada año también se perfeccionan y sofistican los armamentos hasta el punto de dejar inservibles los del año anterior, han segregado por sí mismos la noción de detente o de coexistencia pacífica, de pura supervivencia. Porque no se trata ya de que se tema una guerra, de exterminio total, sino de que no se puede subsistireconómicamente si los gastos bélicos prosiguen su carrera. La más cínica realpolitik coincide, entonces, exactamente con la noción de detente o de entendimiento.
 Pero Pax Christi tenía, tiene que preguntarse necesariamente no por los aspectos puramente fácticos de esta terrible cuestión, sino por su aspecto moral y precisamente a la luz de la ética que se deriva de la lectura evangélica, una ética que, naturalmente, no puede hacer otra cosa que propiciar el desarme y decir «no» a la guerra. Porque, en otro tiempo, la teología cristiana podía muy bien distinguir entre guerras justas e injustas y el modo justo o injusto de llevarlas a cabo. Como señala Von Weizsaker, esa teología podía establecer una diferencia «entre la moral individual que se inclinaba ante el Sermón de la Montaña y la moral de la responsabilidad política que ordenaba la defensa de nuestros semejantes por medio de las armas», pero después de que han aparecido las grandes armas destructoras atómicas y el modo total de hacer la guerra supone el exterminio universal, todo el mundo ha comenzado a mostrarse un tanto escéptico, como el diplomático norteamericano George F. Kennan, «respecto al significado de victoria y derrota en relación con la guerra moderna entre dos grandes países». «A mi modo de ver -continuaba diciendo Kennan-, la derrota es la guerra misma. De todas formas, me parece que hay ocasiones en que no tenemos más alternativa que seguir los dictados de nuestra conciencia, confiarnos a la misericordia de Dios y no hacer demasiadas preguntas».
@@ -187,13 +228,19 @@ Pero hay que hacerse preguntas. La necesidad del desarme y de decir «no» a la 
 En esta tarea por lo demás, los principios cristianos obligarán a veces a situaciones -problema de venta de armas, por ejemplo- que pondrán en condiciones de inferioridad a quienes los sustentan. Pero, como escribió el cuáquero Roland H, Bainton, resumiendo el problema de la fuerza y el Evangelio: «¿Desde cuándo los hombres con escrúpulos hemos dejado de estar en desventaja en nuestras relaciones con aquellos que no los tienen?
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Hoy regresa Víctor Salazar, secretario del PSOE (histórico)","
+
+------
+Hoy regresa Víctor Salazar, secretario del PSOE (histórico)
+1976-05-04T00:00:00+02:00
+
 A primera hora de la mañana de hoy llegará al aeropuerto de Barajas, procedente de México, Víctor Salazar, secretario general del sector histórico del Partido Socialista Obrero Español tras cuarenta años de exilio.El señor Salazar, de 68 años es secretario del PSOE (histórico) de 1974, año en que fue nombrado sustituto del tantos años otrora secretario, Rodolfo Llopis. Exiliado desde el año 1939, ha vuelto a España en una ocasión desde el pasado mes de noviembre y ahora piensa instalarse definitivamente en nuestro país con la intención de reanimar la vida políticas de su partido y lograr la unificación del sector histórico con el PSOE del que es primer secretario el abogado sevillano Felipe González.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","La oposición valenciana prepara tres congresos","
+
+------
+La oposición valenciana prepara tres congresos
+1976-05-04T00:00:00+02:00
+
 Alianza Demócrata Valenciana, nombre provisional de un partido político regionalista de derechas, ha convocado una asamblea para el próximo día 7. Unión Democrática del País Valenciano (UDPV), partido democristiano, celebrará los próximos días 14 y 15 el tercer congreso regional. Finalmente, la Junta Democrática del País Valenciano y Consell Democratic del País Valenciá, plataforma de la oposición, están progresando en la ratificación por la base de su proyecto de unidad.
 La convocatoria de esta gran alianza valenciana, hecha pública a mediados del mes pasado, tiene como objetivos prioritarios la constitución de un gran partido regional integrador de amplias zonas de opinión con marcado carácter interclasista. Parte de los principios de libertad al totalitarismo, de justicia social y regionalismo del País Valenciano desvinculado de toda dependencia central o periférica.Se define defensor de la autonomía política y administrativa, dentro de una organización estatal regional y dispuesto a promocionar una tercera vía de convergencia colectiva y federada, entre el inmovilismo y las organizaciones marxistas.
 Un centenar de simpatizantes de esta ideología se reunirán el próximo viernes, con el fin de aprobar su programa básico, así como de elaborar el manifiesto del partido.
@@ -206,13 +253,19 @@ Por otra parte se prevé para uno de estos días la reunión del comité de Enll
 Uno de los puntos a debate consiste enla relación que mantendrán Taula y Asamblea. Por una parte se considera que son dos organismos independientes, con funciones distintas, pero complementarias. Por parte de otros sectores se consideraría conveniente mayor interdependencia.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Honrada y ambiciosa reposición de \"La vida es sueño\"","
+
+------
+Honrada y ambiciosa reposición de "La vida es sueño"
+1976-05-04T00:00:00+02:00
+
 La compañía «Lope de Vega» ha conmemorado sus primeros treinta años de vida con una brillante reposición de «La vida es sueño», de Calderón de la Barca. Una representación a la vez honrada y ambiciosa, densa y cristalina. Como debe ser, Calderón, para un espectador contemporáneo, es un escritor existencialista. Su gran personaje -Segismundo- es un ser teatral que existe tan complicada y delicadamente como un ser vivo. A su través, la imaginación teatral de Calderón y su impresionante voz poética realizan una meditación profunda sobre el problema del libre albedrío. La verdad es que los sociólogos quizás tengan muy poco que hacer con los versos de Calderón. Pero los psicólogos se quedarán siempre mudos de asombro.La interpretación de la compañía «Lope de Vega» es bastante desigual. El esfuerzo de Juan Diego tendió a componer su SEGISMUNDON cómo si fuese una fiera lúcida. Pedro del Río y Francisco Portes vacilaron ante las dificultades del verso, patético y conceptuoso. Los espectadores del Bellas Artes aplaudieron.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Crisis política y terrorismo en Georgia","
+
+------
+Crisis política y terrorismo en Georgia
+1976-05-04T00:00:00+02:00
+
 Desde hace dos años graves acontecimientos tienen lugar en Georgia (URSS). Atentados contra edificios oficiales y campañas de desprestigio hacia la política planificadora del Partido Comunista de Georgia, se han estado repitiendo.El 12 de abril pasado, una bomba hizo explosión en la sede del Consejo de Ministros de la República socialista de Georgia, último acontecimiento de una serie de atentados que se inició en 1973 con el incendio del teatro de la Opera de Tbilisi, capital de la República georgiana.
 Desde entonces hasta el 12 de abril se sucedieron una serie de atentados, en la Sala Filarmónica de la capital, en un garaje de automóviles, en un almacen agrícola, en instalaciones cinematográficas y deportivas, en un laboratorio del Instituto de Agricultura de la República de Georgia.
 Se han contabilizado varios heridos en estos atentados, durante el pasado mes de octubre al estallar dos bombas en una fábrica de construcción aeronáutica.
@@ -222,16 +275,22 @@ Desde aquel año, el primer secretario del Comité Central del PC de Georgia, Ch
 Chevarnatze se encuentra en el centro de tres corrientes que combaten su política desde distintas perspectivas. Los clientes de Myavanazde que intertarían volver a los buenos tiempos del caciquismo y la malversación económica.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Acciones legales por malos tratos a periodistas","
+
+------
+Acciones legales por malos tratos a periodistas
+1976-05-04T00:00:00+02:00
+
 Mañana, miércoles, la Junta Directiva de la Asociación de la Prensa de Madrid, en reunión extraordinaria, estudiará las medidas oportunas a tomar ante los continuos entorpecimientos en el ejercicio de la labor informativa. Fuentes próximas a dicha Junta han asegurado que entre estas medidas podría estar una querella contra las Fuerzas de Orden Público en general, basada en los malos tratos que varios periodistas nacionales y extranjeros sufrieron el pasado día 1 en la Casa de Campo, incluso, en la Dirección General de Seguridad.
-En una nota hecha pública ayer por la citada Junta Directiva reunida bajo la presidencia de Manuel Calvo, vicepresidente segundo, por ausencia de Lucio del Álamo se decidió difundir la siguiente nota: \"El pasado día 1 de mayo, varios periodistas e informadores gráficos fueron detenidos y maltratados de palabra y obra por agentes del orden público que no mostraron ninguna consideración con la misión informativa que estos periodistas desempeñaban, ni siquiera ante la exhibición ocasional de las escarapelas acreditativas, expedidas por el propio Ministerio de la Gobernación. Fueron retirados carretes y rotas las máquinas fotográficas de varios redactores gráficos, uno de los cuales fue maltratado incluso después de ingresar detenido en los locales de la DGS\".Tras declarar el ya mencionado estudio de las medidas a adoptar, la nota finaliza dando noticia de que \"la Junta Directiva ha conocido también la detención del periodista don Luis Lázaro, cuya puesta en libertad acuerda solicitar\". La nota fue aprobada por mayoría de siete votos contra dos.
+En una nota hecha pública ayer por la citada Junta Directiva reunida bajo la presidencia de Manuel Calvo, vicepresidente segundo, por ausencia de Lucio del Álamo se decidió difundir la siguiente nota: "El pasado día 1 de mayo, varios periodistas e informadores gráficos fueron detenidos y maltratados de palabra y obra por agentes del orden público que no mostraron ninguna consideración con la misión informativa que estos periodistas desempeñaban, ni siquiera ante la exhibición ocasional de las escarapelas acreditativas, expedidas por el propio Ministerio de la Gobernación. Fueron retirados carretes y rotas las máquinas fotográficas de varios redactores gráficos, uno de los cuales fue maltratado incluso después de ingresar detenido en los locales de la DGS".Tras declarar el ya mencionado estudio de las medidas a adoptar, la nota finaliza dando noticia de que "la Junta Directiva ha conocido también la detención del periodista don Luis Lázaro, cuya puesta en libertad acuerda solicitar". La nota fue aprobada por mayoría de siete votos contra dos.
 El señor Lázaro fue detenido el pasado día 1 en su casa en unión de su mujer, y otras cuatro personas. Ni la Junta Directiva de la Asociación de la Prensa, que intentó visitarle el domingo, ni su abogado, Eduardo del Campo, tienen noticias hasta el momento de su situación. Todas las gestiones realizadas han quedado sin contestación
 Los malos tratos a que hace referencia la nota se produjeron contra una veintena de periodistas, algunos de los cuales informaron ayer en una reunión celebrada en los locales de la Asociación de la Prensa con presencia de miembros de la Junta Directiva.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Vélez denuncia una coalición Super Ser-Raleigh","
+
+------
+Vélez denuncia una coalición Super Ser-Raleigh
+1976-05-04T00:00:00+02:00
+
 La lucha entre los dos equipos grandes españoles, Kas y Super Ser, es el comentario importante de todos los corrillos de la Vuelta. Eusebio Vélez, el director de los de Vitoria, no se pudo aguantar en la meta de Baza, y dijo:-El Super Ser y el Raleigh están aliados. Ya se ha dicho que tiraron del pelotón para neutralizar todsas las escapadas. En cambio, no movieron un dedo cuando saltó Harritz. No sé qué va a ser de la carrera. Hay cosas por las que no paso No admito la gente que ha entrado en el ciclismo para perjudicarlo Me he hartado de ver tantas cosas sucias que éste será mi último año.
 Hablamos con el director del cuadro vitoriano cuando Gabriel Saura había hecho unas declaraciones un tanto evasivas. El rector de los de Pamplona contestó así sobre la posible alianza que denunció Vélez:
 
@@ -258,23 +317,32 @@ Le decíamos a Eusebio lo que ha declarado Saura, y sonríe.
 -Me ha saludado y no me ha dicho nada, pero como se leocurra dirigirse a mí me va a oír cuatro cosas. Lo que no se puede hacer es volver al ciclismo con un equipo de tanto dinero y que no seguirá el año que viene. Luego, claro, como a la Federación no le interesa que desaparezca se le dan privilegios a los que no tienen derecho. A nosotros, como seguimos siempre, se nos perjudica.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Devueltos 20.000 carteles sobre la amnistía","
+
+------
+Devueltos 20.000 carteles sobre la amnistía
+1976-05-04T00:00:00+02:00
+
 El juez de Orden Público número 2 ha ordenado la devolución al escultor Rafael Muyor de veinte mil carteles sobre la amnistía que le fueron ocupados por funcionarios de la policía cuando aquél fue detenido el 15 de marzo pasado.El cartel está motivado en un cuadro del pintor Juan Genovés, titulado El Abrazo, que representa a un grupo de figuras en actitud de abrazarse. El cuadro de Genovés ha sido expuesto recientemente en Zurich, con motivo de la exposición de la obra de dicho pintor patrocinada por la Galería Marlborough en la citada ciudad suiza. El cartel sobre la amnistía añade al cuadro de Genovés una franja formada por la repetición de la palabra amnistía.
 Según ha manifestado el escultor Muyor, hoy procederá a recoger los veinte mil carteles en las dependencias policiales donde están depositados y, posteriormente, procederá a su distribución.
 La detención de Muyor se produjo en su estudio el día 15 de marzo pasado. Casi al mismo tiempo fue también detenido Juan Genovés. Este fue puesto en libertad a los tres días de su detención, sin ninguna sanción de tipo gubernativo o judicial. Rafael Muyor permaneció detenido algunos días más y fue puesto a disposición del Juzgado de Orden Público número 2. Por su parte, la autoridad gubernativa le impuso una multa de 200.000 pesetas, que el interesado pagó, al mismo tiempo que recurrió, contra la resolución gubernativa, bajo la dirección técnica de abogado José María Torre.
 El Juzgado de Orden Público número 2 abrió sumario al escultor Muyor, que ahora ha sido sobreseido sin procesamiento. El ministerio fiscal ha dado su conformidad al sobreseimiento. A la vez que sobreseía el sumario, el titular del Juzgado de Orden Público ha ordenado la devolución de los veinte mil carteles y de diversas obras literarias ocupadas por la policía durante el registro del estudio del escultor.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","No hay dinero para un congreso de Falange Española","
+
+------
+No hay dinero para un congreso de Falange Española
+1976-05-04T00:00:00+02:00
+
 El congreso de Falange Española de las JONS previsto para finales de mayo podría no celebrarse por falta de medios económicos, según ha declarado el presidente de los «Círculos José Antonio», Diego Márquez Horrillo.«En principio pensamos celebrar un congreso que dure dos o tres días y se cierre con un acto público -ha dicho Márquez-, pero el problema más grave es que no tenemos dinero ni para el alquiler de locales ni para propaganda ni para montar los actos programados.»
 Añadió que si el congreso tiene lugar estará abierto a todas las tendencias falangistas, «pero los falangistas tendrán que venir en plan falangista a tratar únicamente de nuestros asuntos».
 Márquez Horrillo afirmó que es preciso crear el partido Falange Española de las JONS.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Telefónica despide a  28 trabajadores","
+
+------
+Telefónica despide a  28 trabajadores
+1976-05-04T00:00:00+02:00
+
 El Comité Ejecutivo de la Compañía Telefónica acordó ayer, en reunión extraordinaria el despido de 38 de sus trabajadores, trasladar de sus actuales puestos de trabajo a otros 19 y otras dos sanciones menores, según informaron a EL PAIS fuentes laborales.Ante esta nueva situación -que contradice la oferta verbal de la Compañía para el restablecimiento de la normalidad, a cambio de que no hubiera sancionados con el despido a causa de la huelga que mantuvieron los telefónicos durante veintinueve días- ayer mismo reanudaron los trabajadores sus contactos de cara a una nueva movilización que evite las sanciones. Para hoy tienen previsto la celebración de asambleas en los diversos centros de trabajo, de las cuales -según las citadas fuentes- podría salir el acuerdo de una nueva huelga, mientras que la Compañía no anule los acuerdos adoptados ayer.
 Por su parte, la Oficina de Prensa de la Telefónica remitió ayer a los medios informativos una nota en la que da cuenta de las sanciones acordadas por el Comité Ejecutivo de la Compañía, a consecuencia de «la huelga ilegal realizada por una parte de la plantilla, entre los días 23 de marzo y 20 de abril, en varios centros y provincias».
 Según la nota, la plantilla activa de Telefónica es de 53.428 empleados, de los cuales 13.089 participaron en paros y abandonos del servicio con duraciones que, en algunos no sobrepasaron la hora, y en otros alcanzaron los veinte días.
@@ -283,14 +351,20 @@ Los 59 expedientes fallados en la sesión de ayer, según dice Telefónica corre
 La huelga de Telefónica, que durante casi un mes mantuvo seriamente afectado el servicio telefónico, en particular por lo que hace referencia a las comunicaciones internacionales, tuvo su origen en la negociación del convenio colectivo, que, finalmente, concluyó con el laudo dictado por el Ministerio de Trabajo.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Locutorios sin control auditivo en Carabanchel y Yeserías","
+
+------
+Locutorios sin control auditivo en Carabanchel y Yeserías
+1976-05-04T00:00:00+02:00
+
 La instalación de un nuevo sistema de locutorios en las cárceles de Carabanchel y de Yeserías, de Madrid, por el que las entrevistas de los abogados defensores con sus clientes presos puedan ser controladas visualmente, pero no auditivamente, está en trance de realización, según ha manifestado a los periodistas Antonio Pedrol, decano del Colegio de Abogados de Madrid, en un almuerzo que reanuda los contactos mensuales que venía teniendo el señor Pedrol con los representantes de los medios informativos, y que habían sido interrumpidos por diversas causas.En relación con el tema de los locutorios cuyo sistema actual ha levantado en numerosas ocasiones protestas por parte de abogados defensores, el señor Pedrol ha manifestado que el Colegio de Abogados de Madrid no puede aceptar el actual control auditivo de las entrevistas abogado-preso, aunque nada tiene que objetar al control visual a distancia.
 Una vez instalado el nuevo sistema de locutorios, en el que actualmente trabajan los técnicos, el Colegio de Abogados de Madrid enviará sus propios técnicos con el fin de comprobar las nuevas instalaciones. Según ha manifestado el Señor Pedrol, el Colegio de Abogados ha ofrecido adelantar fondos para dicha obra en el caso de que no hubiera asignación presupuestaria.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","90.000 vecinos de Entrevías piden solución a sus problemas de transporte","
+
+------
+90.000 vecinos de Entrevías piden solución a sus problemas de transporte
+1976-05-04T00:00:00+02:00
+
 La situación del transporte público en la periferia de Madrid presenta graves problemas que han conducido a manifestaciones, boicots y escritos constantes de protesta. Junto a esas posturas surge otra, nueva, de los vecinos de Entrevías, que solicitan la construcción de un apeadero de Renfe para paliar en parte este problema. Hasta el momento no han obtenido respuesta.
 Los vecinos de Entrevías y zonas limítrofes han solicitado del presidente del Consejo de Administración de la Renfe, Plácido Fidalgo, un apeadero de ferrocarril que mitigue los graves problemas de transporte que tiene planteados la zona.El escrito, firmado por ocho asociaciones, incluye un informe realizado por los ingenieros de caminos señores Miralles y Fernández Lafuente, y aprobado por el Colegio Oficial de Ingenieros de Madrid. Las asociaciones exponen en su carta que en el barrio se siente desde hace tiempo la necesidad de contar con una estación férrea, por el importante volumen de actividades y el constante crecimiento demográfico que registra.
 El área de influencia del apeadero que se solicita está estructurada en dos zonas, norte y sur, con divisoria en el trazado actual de la línea ferroviaria Atocha-Vallecas. El estudio de las zonas, según datos extraídos del informe del Ayuntamiento, de Madrid para 1973, indica una población global de casi noventa mil habitantes y una superficie de 270 hectáreas. El bloque sur, al estar encerrado por las vías de Renfe, tiene gran dificultad de accesos y está comunicado con el resto del casco urbano de Madrid por sólo dos pasos subterráneos de un solo carril y otro paso elevado de dos calzadas.
@@ -301,8 +375,11 @@ Presupuestos
 En el último apartado del estudio se incluye un análisis aproximado de presupuestos, obtenido por comparaciones con otros apeaderos similares. El total asciende a trece millones de pesetas, divididos en la siguiente forma: 1.800.000 pesetas por dos cambios completos a ambos extremos de los andenes; 6.500.000 destinados a andenes de 250 por cuatro metros a ambos lados de la vía doble, con dos pasos inferiores y cuatro refugios para, viajeros, y 4.800.000 para edificación de oficinas y despacio de billetes, con una superficie de 25 por 10 metros en planta.En un párrafo del escrito enviado al señor Fidalgo los vecinos reseñan que «como se desprende de los datos adjuntos, fruto de un estudio de posibilidades de la zona en sus varios aspectos, así como del lugar apropiado para su construcción, entendemos que dicho apeadero en modo alguno sería gravoso para esa entidad y, en cambio, aportaría una gran solución para los miles de habitantes de este núcleo urbano, que, debido a las deficiencias en los transportes públicos, encuentran grandes dificultades para su traslado a sus lugares habituales de trabajo».
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","«El cargo me ha costado muchas amenazas»","
+
+------
+«El cargo me ha costado muchas amenazas»
+1976-05-04T00:00:00+02:00
+
 José Luis Lorca Palencia, cincuenta años, casado, dos hijas, es presidente de la Asociación de Vecinos de la Paz, en Entrevías; desde hace dos años, en que fue legalizada. La asociación está integrada por quinientos miembros, de los que más de cuatrocientos le votaron.Dejé el colegio a los trece años, cuando murió mi padre. Comencé a trabajar en un taller de carpintería para mantener a mi madre y dos hermanos pequeños. Gano lo que cualquiera.
 -¿Cómo fue usted elegido presidente?
 -La asociación nació como consecuencia de necesidades comunes y yo fui uno de los vecinos que, al ver la marginación a que estábamos sometidos, buscó una forma legal de lucha, La primera asamblea celebrada fue una exposición de motivos. En ella se me eligió presidente por mayoría. Cuando la asociación fue legalizada, unos meses después, puse mi cargo a disposición de lajuntay fui confirmado.
@@ -333,25 +410,37 @@ MÁS INFORMACIÓN
 -Al que garantizara una democracia auténtica.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Verbena en Malasaña tras diez años de prohibiciones","
+
+------
+Verbena en Malasaña tras diez años de prohibiciones
+1976-05-04T00:00:00+02:00
+
 Diez años después, cuando la tradición parecía perderse por las constantes prohibiciones municipales a la celebración de las fiestas del 1 de Mayo en el barrio de Malasaña, la verbena estalló el sábado por la noche en la plaza de 2 de Mayo. Tres alcaldes, el conde de Mayalde, Carlos Arias y Migue Angel García Lomas habían prohibido el derecho de un barrio a su fiesta popular, alegando siempre que su celebración podría suponer graves problemas de tráfico en el corazón de Madrid.El programa de festejos ha sido confeccionado por la Asociación de Vecinos de Malasaña y termina mañana. Se pidió colaboración a Ayuntamiento para sufragar gastos y el Ayuntamiento dio 5.000 pesetas.
 «Grupo Retales» actuó el sábado para todos los congregados en la plaza.
 Gracias a la gestión y el trabajo de la Asociación de Vecinos, el barrio de Malasaña ha encontrado un cauce de participación ciudadana de convivencia. «Esto es muy importante de cara a un análisis de problemas en común», dice el presidente de la Asociación Antonio Murcia.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","El Alcalde, en la Diputación","
+
+------
+El Alcalde, en la Diputación
+1976-05-04T00:00:00+02:00
+
 El alcalde de Madrid -a la derecha- Juan de Arespacochaga visitó ayer al presidente de la Diputación madrileña, José Martínez Emperador. La entrevista tuvo lugar a primeras horas de la mañana y el cambio de impresiones se realizó en un ambiente cordial. Antes de que abandonara el palacio provincial, Juan de Arespacochaga fue cumplimentado por los diputados provinciales. Esta visita del alcalde de Madrid a la Diputación parece ser parte de la serie de entrevistas que el señor Arespacochaga quiere mantener con los distintos organismos que tienen mayor influencia en la ciudad.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","Cuatrocientos padroneros, llamados a declarar","
+
+------
+Cuatrocientos padroneros, llamados a declarar
+1976-05-04T00:00:00+02:00
+
 Cuatrocientos agentes encargados de recoger los padrones fueron llamados ayer a declarar por el Juzgado de Instrucción número 13, en relación con la denuncia presentada por el Ayuntamiento de Madrid contra estos trabajadores eventuales.El pago de este trabajo se realizó algún tiempo después, aunque la mayoría de los padroneros no ha cobrado hasta el momento el importe total de su trabajo. Las citaciones del Juzgado de Instrucción número 13 tienen carácter urgente y estaban previstas para ayer, hoy y días sucesivos.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
-"1","1976-05-04T00:00:00+02:00","\"En Torrejón de Ardoz no hay especulación\"","
+
+------
+"En Torrejón de Ardoz no hay especulación"
+1976-05-04T00:00:00+02:00
+
 «En Torrejón no existe especulación. Todos los terrenos urbanos tienen una calificación concreta y las pocas construcciones que se han realizado con un exceso de volumen se han permitido a cambio de concesiones recíprocas de terrenos en favor del Ayuntamiento», ha manifestado a EL PAIS el alcalde de la localidad madrileña de Torrejón de Ardoz.
 Casto Hermoso es alcalde de Torrejón por elección de sus concejales y médico traumatólogo. Tiene treinta y ocho años. «A los Plenos municipales no nos gusta que vengan periodistas, fundamentalmente porque muchas veces la información que sacan de estas reuniones no se ajusta a la verdad o ésta aparece desfigurada», dice.«La nuestra es una población problemática, porque se ha hecho en el transcurso de los últimos diez años. Ha pasado, en este corto período de tiempo, de ser eminentemente agrícola a casi plenamente industrial. La concentración industrial que tiene ahora mismo es muy importante, de tal manera que podemos contarnos entre los diez primeros municipios del país en este aspecto. Y todo ha sido porque Torrejón se brindó, en su momento, a solucionar el problema industrial que tenía Madrid capital.
 -¿Cuál es el mayor problema que tienen?
@@ -363,4 +452,5 @@ Está por completo resuelto -contesta- en lo que se refiere a la educación gene
 -Sí, pero la verdad es que en ese aspecto no existe ningún problema. Los vecinos a veces se quejan, pero lo hacen con demasiado alboroto, sin que exista una razón auténtica. Quieren que se les lleve hasta la puerta de casa y esto no puede ser.
 
 * Este artículo apareció en la edición impresa del Martes, 4 de mayo de 1976
-"
+
+------

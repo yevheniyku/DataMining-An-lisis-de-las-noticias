@@ -86,12 +86,11 @@ accessArticle <- function(url){
   title <- html_node(page, '.articulo-titulo')      %>% html_text
   date  <- html_node(page, '.articulo-actualizado') %>% html_attr('datetime')
   text  <- html_node(page, '.articulo-cuerpo')      %>% html_text()
+  separator <- '------'
   
-  df <- data.frame(ArticleDate = date, ArticleTitle = toString(title), ArticleBody = toString(text))
+  d <- c(title, date, text, separator)
   
-  print(df)
-  
-  write.table(df, "csv/elpais.csv", sep=",", col.names = FALSE, append = TRUE)
+  write(d, file = "data/elpais.txt", append = TRUE)
 }
 
 main <- function(){
@@ -106,7 +105,7 @@ main <- function(){
   # que corresponde al dia de hoy
   endDate <- Sys.Date()
   # crea un directoryo donde se va a guardar el csv
-  dir.create("csv/", showWarnings = FALSE)
+  dir.create("data/", showWarnings = FALSE)
   
   iterateArticles(startDate, endDate, urlElPais)
 }
