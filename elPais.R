@@ -39,7 +39,7 @@ installLibraries <- function(){
 ##################################################################
 iterateArticles <- function(startDate, endDate, urlElPais){
   # recorremos todas las fechas   
-  #while(startDate <= endDate){
+  while(startDate <= endDate){
     #date <- as.Date(start, format="%d-%m-%Y")
     urlDate <- format(startDate, format="%Y%m%d")
     # generamos la url con la fecha
@@ -74,7 +74,7 @@ iterateArticles <- function(startDate, endDate, urlElPais){
     }
     #incrementamos la fecha 
     startDate <- startDate + 1
-  #}
+  }
 }
 
 accessArticle <- function(url){
