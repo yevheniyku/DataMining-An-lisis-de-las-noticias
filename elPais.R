@@ -85,6 +85,7 @@ accessArticle <- function(url){
   
   title <- html_node(page, '.articulo-titulo')      %>% html_text
   date  <- html_node(page, '.articulo-actualizado') %>% html_attr('datetime')
+  tag   <- c(html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text)
   text  <- html_node(page, '.articulo-cuerpo')      %>% html_text()
   separator <- '------'
   
