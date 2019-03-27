@@ -54,13 +54,18 @@ installLibraries <- function(){
   library(cluster)
 }
 
+openFile <- function(){
+  return(file('data/elpais.txt', open = 'r'))
+}
 
-frecuenceAnali<- function(){
+
+dataLooping<- function(){
+  fd <- openFile()
   
-  
-  
-  nov_raw <- read_lines("data/elpais.txt", skip = 419, n_max = 8313-419)
-  
-  
+  while(length(line <- readLines(fd, n = 1, warn = FALSE)) > 0){
+    while(line != '------'){
+      
+    }
+  }
   
 }

@@ -28,10 +28,15 @@ installLibraries <- function(){
     install.packages("httr")
   }
   
+  if (!is.installed("jsonlite")){
+    install.packages("jsonlite")
+  }
+  
   # llamamos las librerias necesarias
   library(rvest)
   library(rlist)
   library(httr)
+  library(jsonlite)
 }
 
 ##################################################################
@@ -70,14 +75,22 @@ iterateArticles <- function(startDate, endDate, urlElPais){
     }
     
     for(i in length(listUrl)){
-      lapply(listUrl[[i]], function(x) accessArticle(x))
+      if(startDate == endDate){
+        last <- length(listUrl)
+        lenLast <- length(listUrl[[last]])
+        lastArticle <- listUrl[[last]][lenLast]
+        lapply(listUrl[[i]], function(x) accessArticle(x, x == lastArticle))
+      }
+      else {
+        lapply(listUrl[[i]], function(x) accessArticle(x, FALSE))
+      }
     }
     #incrementamos la fecha 
     startDate <- startDate + 1
   }
 }
 
-accessArticle <- function(url){
+accessArticle <- function(url, lastDay){
   url <- gsub("//", "https://", url, fixed = TRUE)
   
   newSession <- html_session(url)
@@ -85,13 +98,20 @@ accessArticle <- function(url){
   
   title <- html_node(page, '.articulo-titulo')      %>% html_text
   date  <- html_node(page, '.articulo-actualizado') %>% html_attr('datetime')
-  tag   <- c(html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text)
   text  <- html_node(page, '.articulo-cuerpo')      %>% html_text()
-  separator <- '------'
+  tag   <- c(html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text)
   
-  d <- c(title, date, text, separator)
+  data <- list(title = title, date = date, tags = list(tag), text = text)
   
-  write(d, file = "data/elpais.txt", append = TRUE)
+  print(date)
+  
+  jsonData <- toJSON(data, pretty = TRUE, auto_unbox = TRUE)
+  
+  if(!lastDay){
+    jsonData <- paste0(jsonData, ',')
+  }
+  
+  write(jsonData, file = "data/elpais.json", append = TRUE)
 }
 
 main <- function(){
@@ -104,11 +124,15 @@ main <- function(){
   start <- format(startDate, format="%d-%m-%Y")
   # guardamos y le damos formato a la ultima fecha de webscrapping 
   # que corresponde al dia de hoy
+  #endDate <- as.Date("05-05-1976", format="%d-%m-%Y")
   endDate <- Sys.Date()
   # crea un directoryo donde se va a guardar el csv
   dir.create("data/", showWarnings = FALSE)
+  write('[', file = "data/elpais.json")
   
   iterateArticles(startDate, endDate, urlElPais)
+  
+  write(']', file = "data/elpais.json", append = TRUE)
 }
 
 main()
