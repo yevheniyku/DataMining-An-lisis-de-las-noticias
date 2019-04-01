@@ -20,12 +20,12 @@ installLibraries <- function(){
     install.packages("tm")
   }
   
-  if (!is.installed("SnowBallC")){
-    install.packages("SnowBallC")
+  if (!is.installed("SnowballC")){
+    install.packages("SnowballC")
   }
   
-  if (!is.installed("worlcloud")){
-    install.packages("worlcloud")
+  if (!is.installed("wordcloud")){
+    install.packages("wordcloud")
   }
   
   if (!is.installed("ggplot2")){
@@ -44,6 +44,10 @@ installLibraries <- function(){
     install.packages("cluster")
   }
   
+  if (!is.installed("jsonlite")){
+    install.packages("jsonlite")
+  }
+  
   # llamamos las librerias necesarias
   library(tm)
   library(SnowballC)
@@ -52,10 +56,7 @@ installLibraries <- function(){
   library(dplyr)
   library(readr)
   library(cluster)
-}
-
-openFile <- function(){
-  return(file('data/elpais.txt', open = 'r'))
+  library(jsonlite)
 }
 
 
@@ -69,3 +70,14 @@ dataLooping<- function(){
   }
   
 }
+
+main <- function(){
+  installLibraries()
+  
+  jsonData <- fromJSON("data/elpais.json", simplifyDataFrame = TRUE)
+  
+  class(jsonData)
+  
+}
+
+main()

@@ -32,17 +32,24 @@ installLibraries <- function(){
     install.packages("jsonlite")
   }
   
+  if (!is.installed("XML")){
+    install.packages("XML")
+  }
+  
   # llamamos las librerias necesarias
   library(rvest)
   library(rlist)
   library(httr)
   library(jsonlite)
+  library(XML)
 }
 
 ##################################################################
 # La funcion que recorre los articulos de El Pais 
 ##################################################################
 iterateArticles <- function(startDate, endDate, urlElPais){
+  # creamos la raiz del xml
+  root <- newXMLNode("articles")
   # recorremos todas las fechas   
   while(startDate <= endDate){
     #date <- as.Date(start, format="%d-%m-%Y")
@@ -75,22 +82,16 @@ iterateArticles <- function(startDate, endDate, urlElPais){
     }
     
     for(i in length(listUrl)){
-      if(startDate == endDate){
-        last <- length(listUrl)
-        lenLast <- length(listUrl[[last]])
-        lastArticle <- listUrl[[last]][lenLast]
-        lapply(listUrl[[i]], function(x) accessArticle(x, x == lastArticle))
-      }
-      else {
-        lapply(listUrl[[i]], function(x) accessArticle(x, FALSE))
-      }
+        lapply(listUrl[[i]], function(x) accessArticle(x, root))
     }
     #incrementamos la fecha 
     startDate <- startDate + 1
   }
+  
+  return(root)
 }
 
-accessArticle <- function(url, lastDay){
+accessArticle <- function(url, root){
   url <- gsub("//", "https://", url, fixed = TRUE)
   
   newSession <- html_session(url)
@@ -99,19 +100,21 @@ accessArticle <- function(url, lastDay){
   title <- html_node(page, '.articulo-titulo')      %>% html_text
   date  <- html_node(page, '.articulo-actualizado') %>% html_attr('datetime')
   text  <- html_node(page, '.articulo-cuerpo')      %>% html_text()
-  tag   <- c(html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text)
+  tag   <- html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text
   
   data <- list(title = title, date = date, tags = list(tag), text = text)
   
   print(date)
   
-  jsonData <- toJSON(data, pretty = TRUE, auto_unbox = TRUE)
+  articleXML <- newXMLNode("article", parent = root)
+  newXMLNode("title", title, parent = articleXML)
+  newXMLNode("date", date, parent = articleXML)
+  tagList <- newXMLNode("tags", parent = articleXML)
+  lapply(tag, function(x) {
+      newXMLNode("tag", x, parent = tagList)
+    })
+  newXMLNode("text", text, parent = articleXML)
   
-  if(!lastDay){
-    jsonData <- paste0(jsonData, ',')
-  }
-  
-  write(jsonData, file = "data/elpais.json", append = TRUE)
 }
 
 main <- function(){
@@ -124,15 +127,15 @@ main <- function(){
   start <- format(startDate, format="%d-%m-%Y")
   # guardamos y le damos formato a la ultima fecha de webscrapping 
   # que corresponde al dia de hoy
-  #endDate <- as.Date("05-05-1976", format="%d-%m-%Y")
-  endDate <- Sys.Date()
+  endDate <- as.Date("05-05-1976", format="%d-%m-%Y")
+  #endDate <- Sys.Date()
   # crea un directoryo donde se va a guardar el csv
   dir.create("data/", showWarnings = FALSE)
-  write('[', file = "data/elpais.json")
   
-  iterateArticles(startDate, endDate, urlElPais)
+  xml <- iterateArticles(startDate, endDate, urlElPais)
   
-  write(']', file = "data/elpais.json", append = TRUE)
+  saveXML(xml, file = "data/elpais.xml", indent = TRUE, encoding = "utf-8")
+  
 }
 
 main()
