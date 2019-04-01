@@ -134,7 +134,7 @@ main <- function(){
   
   xml <- iterateArticles(startDate, endDate, urlElPais)
   
-  saveXML(xml, file = "data/elpais.xml", indent = TRUE, encoding = "utf-8")
+  saveXML(xml, file = "data/elpais.xml", indent = TRUE, encoding = "Spanish")
   
 }
 
