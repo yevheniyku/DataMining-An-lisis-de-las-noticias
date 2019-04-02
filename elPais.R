@@ -44,51 +44,23 @@ installLibraries <- function(){
   library(XML)
 }
 
-##################################################################
-# La funcion que recorre los articulos de El Pais 
-##################################################################
-iterateArticles <- function(startDate, endDate, urlElPais){
-  # creamos la raiz del xml
-  root <- newXMLNode("articles")
-  # recorremos todas las fechas   
-  while(startDate <= endDate){
-    #date <- as.Date(start, format="%d-%m-%Y")
-    urlDate <- format(startDate, format="%Y%m%d")
-    # generamos la url con la fecha
-    finalUrl <- paste0(urlElPais, urlDate)
-    
-    # comprobamos que la pagina existe y que no redirecciona
-    # ni se genera ningun error
-    if(http_status(GET(finalUrl))[[1]] == "Success"){
-      
-      # hacemos la peticion
-      page <- read_html(finalUrl)
-      session <- html_session(finalUrl)
-      # guardamos los titulos de todos los articulos 
-      listUrl <- list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href'))
-      
-      # miramos si existe la clase de "paginacion-siguiente"
-      # para ver si hay mas titulos. si la longitud es 0, es que 
-      # solo hay una pagina con articulos ese dia 
-      while (length(html_nodes(page, '.paginacion-siguiente')) != 0){
-        # sacamos la url de la siguiente pagina
-        nextPage  <- html_nodes(page, '.paginacion-siguiente') %>% html_nodes('a') %>% html_attr('href')
-        # cargamos la siguiente pagina 
-        page <- jump_to(session, nextPage) %>% read_html()
-        # sacamos los articulos de la nueva pagina y los guardamos en 
-        # la lista listUrl
-        listUrl <- c(listUrl, list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href')))
-      }
-    }
-    
-    for(i in length(listUrl)){
-        lapply(listUrl[[i]], function(x) accessArticle(x, root))
-    }
-    #incrementamos la fecha 
-    startDate <- startDate + 1
-  }
+getYear <- function(date){
+  dateSplit <- strsplit(toString(date), "[-]")
+  return(unlist(date)[1])
+}
+
+checkDate <- function(date, oldDate){
+  year <- getYear(date)
   
-  return(root)
+  return(mod(year, 10) == 0 && year > oldDate)
+}
+
+writeXML <- function(xmlFile, newDate, oldDate){
+  if(checkDate(newDate, oldDate)){
+    ext <- paste0(getYear(newDate), ".xml")
+    file <- paste0("data/elpais", ext)
+    saveXML(xmlFile, file = file, indent = TRUE, encoding = "Spanish")
+  }
 }
 
 accessArticle <- function(url, root){
@@ -111,30 +83,81 @@ accessArticle <- function(url, root){
   newXMLNode("date", date, parent = articleXML)
   tagList <- newXMLNode("tags", parent = articleXML)
   lapply(tag, function(x) {
-      newXMLNode("tag", x, parent = tagList)
-    })
+    newXMLNode("tag", x, parent = tagList)
+  })
   newXMLNode("text", text, parent = articleXML)
   
+}
+
+getUrlList <- function(startDate, endDate, urlElPais){
+  urlDate <- format(startDate, format="%Y%m%d")
+  # generamos la url con la fecha
+  finalUrl <- paste0(urlElPais, urlDate)
+  
+  # comprobamos que la pagina existe y que no redirecciona
+  # ni se genera ningun error
+  if(http_status(GET(finalUrl))[[1]] == "Success"){
+    
+    # hacemos la peticion
+    page <- read_html(finalUrl)
+    session <- html_session(finalUrl)
+    # guardamos los titulos de todos los articulos 
+    listUrl <- list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href'))
+    
+    # miramos si existe la clase de "paginacion-siguiente"
+    # para ver si hay mas titulos. si la longitud es 0, es que 
+    # solo hay una pagina con articulos ese dia 
+    while (length(html_nodes(page, '.paginacion-siguiente')) != 0){
+      # sacamos la url de la siguiente pagina
+      nextPage  <- html_nodes(page, '.paginacion-siguiente') %>% html_nodes('a') %>% html_attr('href')
+      # cargamos la siguiente pagina 
+      page <- jump_to(session, nextPage) %>% read_html()
+      # sacamos los articulos de la nueva pagina y los guardamos en 
+      # la lista listUrl
+      listUrl <- c(listUrl, list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href')))
+    }
+  }
+  
+  return(listUrl)
+}
+
+##################################################################
+# La funcion que recorre los articulos de El Pais 
+##################################################################
+getArticles <- function(startDate, endDate, urlElPais){
+  # creamos la raiz del xml
+  root <- newXMLNode("articles")
+  urlElPais <- 'https://elpais.com/tag/fecha/'
+  startDate <- as.Date("04-05-1976", format="%d-%m-%Y")
+  endDate <- Sys.Date()
+  
+  # recorremos todas las fechas   
+  while(startDate <= endDate){
+    listUrl <- getUrlList(startDate, endDate, urlElPais)
+    
+    for(i in length(listUrl)){
+        lapply(listUrl[[i]], function(x) accessArticle(x, root))
+    }
+    
+    #sumar un uno al startdate y pasarlo como newDate 
+    writeXML()
+    #pasamos al siguiente dia 
+    startDate <- startDate + 1
+  }
+  
+  return(root)
 }
 
 main <- function(){
   installLibraries()
   
-  # guardamos la url base de el Pais
-  urlElPais <- 'https://elpais.com/tag/fecha/'
-  # guardamos y le damos formato a la fecha inicio del webscrapping 
-  startDate <- as.Date("04-05-1976", format="%d-%m-%Y")
-  start <- format(startDate, format="%d-%m-%Y")
-  # guardamos y le damos formato a la ultima fecha de webscrapping 
-  # que corresponde al dia de hoy
-  endDate <- as.Date("05-05-1976", format="%d-%m-%Y")
-  #endDate <- Sys.Date()
+ 
   # crea un directoryo donde se va a guardar el csv
   dir.create("data/", showWarnings = FALSE)
   
-  xml <- iterateArticles(startDate, endDate, urlElPais)
+  getArticles(startDate, endDate, urlElPais)
   
-  saveXML(xml, file = "data/elpais.xml", indent = TRUE, encoding = "Spanish")
+
   
 }
 
