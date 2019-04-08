@@ -36,7 +36,11 @@ installLibraries <- function(){
     install.packages("XML")
   }
   
+  if (!is.installed("numbers")){
+    install.packages("numbers")
+  }
   # llamamos las librerias necesarias
+  library(numbers)
   library(rvest)
   library(rlist)
   library(httr)
@@ -46,41 +50,39 @@ installLibraries <- function(){
 
 getYear <- function(date){
   dateSplit <- strsplit(toString(date), "[-]")
-  return(unlist(date)[1])
+  return(unlist(dateSplit)[1])
 }
 
 checkDate <- function(date, oldDate){
   year <- getYear(date)
+  oldDate <- getYear(oldDate)
   
-  return(mod(year, 10) == 0 && year > oldDate)
+  return(mod(as.numeric(year), 10) == 0 && year > oldDate)
 }
 
 writeXML <- function(xmlFile, newDate, oldDate){
   if(checkDate(newDate, oldDate)){
-    ext <- paste0(getYear(newDate), ".xml")
+    year <- as.numeric(getYear(newDate))
+    decade <- toString(year - 10) 
+    ext <- paste0(decade, ".xml")
+    print(ext)
     file <- paste0("data/elpais", ext)
     saveXML(xmlFile, file = file, indent = TRUE, encoding = "Spanish")
   }
 }
 
-accessArticle <- function(url, root){
+accessArticle <- function(url, root, date){
   url <- gsub("//", "https://", url, fixed = TRUE)
   
   newSession <- html_session(url)
   page  <- jump_to(newSession, url)  %>% read_html()
   
   title <- html_node(page, '.articulo-titulo')      %>% html_text
-  date  <- html_node(page, '.articulo-actualizado') %>% html_attr('datetime')
   text  <- html_node(page, '.articulo-cuerpo')      %>% html_text()
   tag   <- html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text
   
-  data <- list(title = title, date = date, tags = list(tag), text = text)
-  
-  print(date)
-  
-  articleXML <- newXMLNode("article", parent = root)
+  articleXML <- newXMLNode("article", parent = root, attrs = c(date = date))
   newXMLNode("title", title, parent = articleXML)
-  newXMLNode("date", date, parent = articleXML)
   tagList <- newXMLNode("tags", parent = articleXML)
   lapply(tag, function(x) {
     newXMLNode("tag", x, parent = tagList)
@@ -116,9 +118,9 @@ getUrlList <- function(startDate, endDate, urlElPais){
       # la lista listUrl
       listUrl <- c(listUrl, list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href')))
     }
+    
+    return(listUrl) 
   }
-  
-  return(listUrl)
 }
 
 ##################################################################
@@ -128,6 +130,7 @@ getArticles <- function(startDate, endDate, urlElPais){
   # creamos la raiz del xml
   root <- newXMLNode("articles")
   urlElPais <- 'https://elpais.com/tag/fecha/'
+  #startDate <- as.Date("28-12-1979", format="%d-%m-%Y")
   startDate <- as.Date("04-05-1976", format="%d-%m-%Y")
   endDate <- Sys.Date()
   
@@ -136,11 +139,11 @@ getArticles <- function(startDate, endDate, urlElPais){
     listUrl <- getUrlList(startDate, endDate, urlElPais)
     
     for(i in length(listUrl)){
-        lapply(listUrl[[i]], function(x) accessArticle(x, root))
+        lapply(listUrl[[i]], function(x) accessArticle(x, root, startDate))
     }
     
     #sumar un uno al startdate y pasarlo como newDate 
-    writeXML()
+    writeXML(root, startDate + 1, startDate)
     #pasamos al siguiente dia 
     startDate <- startDate + 1
   }
@@ -151,13 +154,10 @@ getArticles <- function(startDate, endDate, urlElPais){
 main <- function(){
   installLibraries()
   
- 
   # crea un directoryo donde se va a guardar el csv
   dir.create("data/", showWarnings = FALSE)
   
   getArticles(startDate, endDate, urlElPais)
-  
-
   
 }
 
