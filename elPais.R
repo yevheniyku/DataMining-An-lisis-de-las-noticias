@@ -53,16 +53,9 @@ getYear <- function(date){
   return(unlist(dateSplit)[1])
 }
 
-checkDate <- function(date, oldDate){
-  year <- getYear(date)
-  oldDate <- getYear(oldDate)
-  
-  return(mod(as.numeric(year), 10) == 0 && year > oldDate)
-}
-
-writeXML <- function(xmlFile, newDate, oldDate){
-  if(checkDate(newDate, oldDate)){
-    year <- as.numeric(getYear(newDate))
+writeXML <- function(xmlFile, actual, endDate){
+  if(actualDate == endDate){
+    year <- as.numeric(getYear(endDate + 1))
     decade <- toString(year - 10) 
     ext <- paste0(decade, ".xml")
     print(ext)
@@ -77,8 +70,8 @@ accessArticle <- function(url, root, date){
   newSession <- html_session(url)
   page  <- jump_to(newSession, url)  %>% read_html()
   
-  title <- html_node(page, '.articulo-titulo')      %>% html_text
-  text  <- html_node(page, '.articulo-cuerpo')      %>% html_text()
+  title <- html_node(page, '.articulo-titulo') %>% html_text
+  text  <- html_node(page, '.articulo-cuerpo') %>% html_text()
   tag   <- html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text
   
   articleXML <- newXMLNode("article", parent = root, attrs = c(date = date))
@@ -130,9 +123,6 @@ getArticles <- function(startDate, endDate, urlElPais){
   # creamos la raiz del xml
   root <- newXMLNode("articles")
   urlElPais <- 'https://elpais.com/tag/fecha/'
-  #startDate <- as.Date("28-12-1979", format="%d-%m-%Y")
-  startDate <- as.Date("04-05-1976", format="%d-%m-%Y")
-  endDate <- Sys.Date()
   
   # recorremos todas las fechas   
   while(startDate <= endDate){
@@ -142,13 +132,29 @@ getArticles <- function(startDate, endDate, urlElPais){
         lapply(listUrl[[i]], function(x) accessArticle(x, root, startDate))
     }
     
-    #sumar un uno al startdate y pasarlo como newDate 
-    writeXML(root, startDate + 1, startDate)
+    writeXML(root, startDate, endDate)
     #pasamos al siguiente dia 
     startDate <- startDate + 1
   }
-  
-  return(root)
+}
+
+managePeriods <- function(){
+  startDate <- as.Date("04-05-1976", format = "%d-%m-%Y")
+  endDate   <- as.Date("31-12-1979", format = "%d-%m-%Y")
+  getArticles(startDate, endDate)
+  startDate <- as.Date("01-01-1980", format = "%d-%m-%Y")
+  endDate   <- as.Date("31-12-1989", format = "%d-%m-%Y")
+  getArticles(startDate, endDate)
+  startDate <- as.Date("01-01-1990", format = "%d-%m-%Y")
+  endDate   <- as.Date("31-12-1999", format = "%d-%m-%Y")
+  getArticles(startDate, endDate)
+  startDate <- as.Date("01-01-2000", format = "%d-%m-%Y")
+  endDate   <- as.Date("31-12-2009", format = "%d-%m-%Y")
+  getArticles(startDate, endDate)
+  startDate <- as.Date("01-01-2010", format = "%d-%m-%Y")
+  endDate   <- as.Date("31-12-1979", format = "%d-%m-%Y")
+  getArticles(startDate, endDate)
+
 }
 
 main <- function(){
@@ -157,7 +163,7 @@ main <- function(){
   # crea un directoryo donde se va a guardar el csv
   dir.create("data/", showWarnings = FALSE)
   
-  getArticles(startDate, endDate, urlElPais)
+  
   
 }
 
