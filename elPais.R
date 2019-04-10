@@ -54,7 +54,7 @@ getYear <- function(date){
 }
 
 writeXML <- function(xmlFile, actual, endDate){
-  if(actualDate == endDate){
+  if(actual == endDate){
     year <- as.numeric(getYear(endDate + 1))
     decade <- toString(year - 10) 
     ext <- paste0(decade, ".xml")
@@ -66,7 +66,7 @@ writeXML <- function(xmlFile, actual, endDate){
 
 accessArticle <- function(url, root, date){
   url <- gsub("//", "https://", url, fixed = TRUE)
-  
+
   newSession <- html_session(url)
   page  <- jump_to(newSession, url)  %>% read_html()
   
@@ -119,7 +119,7 @@ getUrlList <- function(startDate, endDate, urlElPais){
 ##################################################################
 # La funcion que recorre los articulos de El Pais 
 ##################################################################
-getArticles <- function(startDate, endDate, urlElPais){
+getArticles <- function(startDate, endDate){
   # creamos la raiz del xml
   root <- newXMLNode("articles")
   urlElPais <- 'https://elpais.com/tag/fecha/'
@@ -131,7 +131,7 @@ getArticles <- function(startDate, endDate, urlElPais){
     for(i in length(listUrl)){
         lapply(listUrl[[i]], function(x) accessArticle(x, root, startDate))
     }
-    
+    print(startDate)
     writeXML(root, startDate, endDate)
     #pasamos al siguiente dia 
     startDate <- startDate + 1
@@ -139,10 +139,12 @@ getArticles <- function(startDate, endDate, urlElPais){
 }
 
 managePeriods <- function(){
-  startDate <- as.Date("04-05-1976", format = "%d-%m-%Y")
+  #startDate <- as.Date("04-05-1976", format = "%d-%m-%Y")
+  startDate <- as.Date("29-12-1979", format = "%d-%m-%Y")
   endDate   <- as.Date("31-12-1979", format = "%d-%m-%Y")
   getArticles(startDate, endDate)
-  startDate <- as.Date("01-01-1980", format = "%d-%m-%Y")
+  #startDate <- as.Date("01-01-1980", format = "%d-%m-%Y")
+  startDate <- as.Date("29-12-1989", format = "%d-%m-%Y")
   endDate   <- as.Date("31-12-1989", format = "%d-%m-%Y")
   getArticles(startDate, endDate)
   startDate <- as.Date("01-01-1990", format = "%d-%m-%Y")
@@ -163,8 +165,7 @@ main <- function(){
   # crea un directoryo donde se va a guardar el csv
   dir.create("data/", showWarnings = FALSE)
   
-  
-  
+  managePeriods()
 }
 
 main()
