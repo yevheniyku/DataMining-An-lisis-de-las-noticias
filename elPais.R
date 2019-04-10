@@ -48,11 +48,18 @@ installLibraries <- function(){
   library(XML)
 }
 
+###########################################################
+# Parsea una fecha y devuelve el año 
+###########################################################
 getYear <- function(date){
   dateSplit <- strsplit(toString(date), "[-]")
   return(unlist(dateSplit)[1])
 }
 
+###########################################################
+# Escribe el xml resultante despues de recorrer todos los 
+# articulos de una decada
+###########################################################
 writeXML <- function(xmlFile, actual, endDate){
   if(actual == endDate){
     year <- as.numeric(getYear(endDate + 1))
@@ -64,16 +71,23 @@ writeXML <- function(xmlFile, actual, endDate){
   }
 }
 
+###########################################################
+# Accede al articulo y guarda los datos que vamos a
+# necesitar posteriormente
+###########################################################
 accessArticle <- function(url, root, date){
   url <- gsub("//", "https://", url, fixed = TRUE)
-
+  
+  # se accede a la pagina 
   newSession <- html_session(url)
   page  <- jump_to(newSession, url)  %>% read_html()
   
+  # se guardan los datos
   title <- html_node(page, '.articulo-titulo') %>% html_text
   text  <- html_node(page, '.articulo-cuerpo') %>% html_text()
   tag   <- html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text
   
+  # se crea un nuevo nodo XML para el articulo 
   articleXML <- newXMLNode("article", parent = root, attrs = c(date = date))
   newXMLNode("title", title, parent = articleXML)
   tagList <- newXMLNode("tags", parent = articleXML)
@@ -84,6 +98,9 @@ accessArticle <- function(url, root, date){
   
 }
 
+###########################################################
+# Recorre las portadas y obtiene los URL de las noticias 
+###########################################################
 getUrlList <- function(startDate, endDate, urlElPais){
   urlDate <- format(startDate, format="%Y%m%d")
   # generamos la url con la fecha
@@ -92,8 +109,6 @@ getUrlList <- function(startDate, endDate, urlElPais){
   # comprobamos que la pagina existe y que no redirecciona
   # ni se genera ningun error
   if(http_status(GET(finalUrl))[[1]] == "Success"){
-    
-    # hacemos la peticion
     page <- read_html(finalUrl)
     session <- html_session(finalUrl)
     # guardamos los titulos de todos los articulos 
@@ -103,9 +118,7 @@ getUrlList <- function(startDate, endDate, urlElPais){
     # para ver si hay mas titulos. si la longitud es 0, es que 
     # solo hay una pagina con articulos ese dia 
     while (length(html_nodes(page, '.paginacion-siguiente')) != 0){
-      # sacamos la url de la siguiente pagina
       nextPage  <- html_nodes(page, '.paginacion-siguiente') %>% html_nodes('a') %>% html_attr('href')
-      # cargamos la siguiente pagina 
       page <- jump_to(session, nextPage) %>% read_html()
       # sacamos los articulos de la nueva pagina y los guardamos en 
       # la lista listUrl
@@ -117,7 +130,8 @@ getUrlList <- function(startDate, endDate, urlElPais){
 }
 
 ##################################################################
-# La funcion que recorre los articulos de El Pais 
+# Recorre los articulos, guarda los datos necesarios y los 
+# escribe en un XML
 ##################################################################
 getArticles <- function(startDate, endDate){
   # creamos la raiz del xml
@@ -138,6 +152,10 @@ getArticles <- function(startDate, endDate){
   }
 }
 
+###########################################################
+# Divide el tiempo total por decadas y hace llamadas a 
+# getArticles 
+###########################################################
 managePeriods <- function(){
   #startDate <- as.Date("04-05-1976", format = "%d-%m-%Y")
   startDate <- as.Date("29-12-1979", format = "%d-%m-%Y")
