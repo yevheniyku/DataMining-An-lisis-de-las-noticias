@@ -106,27 +106,45 @@ getUrlList <- function(startDate, endDate, urlElPais){
   # generamos la url con la fecha
   finalUrl <- paste0(urlElPais, urlDate)
   
-  # comprobamos que la pagina existe y que no redirecciona
-  # ni se genera ningun error
-  if(http_status(GET(finalUrl))[[1]] == "Success"){
-    page <- read_html(finalUrl)
-    session <- html_session(finalUrl)
-    # guardamos los titulos de todos los articulos 
-    listUrl <- list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href'))
-    
-    # miramos si existe la clase de "paginacion-siguiente"
-    # para ver si hay mas titulos. si la longitud es 0, es que 
-    # solo hay una pagina con articulos ese dia 
-    while (length(html_nodes(page, '.paginacion-siguiente')) != 0){
-      nextPage  <- html_nodes(page, '.paginacion-siguiente') %>% html_nodes('a') %>% html_attr('href')
-      page <- jump_to(session, nextPage) %>% read_html()
-      # sacamos los articulos de la nueva pagina y los guardamos en 
-      # la lista listUrl
-      listUrl <- c(listUrl, list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href')))
+  out <- tryCatch(
+    {
+      # comprobamos que la pagina existe y que no redirecciona
+      # ni se genera ningun error
+      if(http_status(GET(finalUrl))[[1]] == "Success"){
+        page <- read_html(finalUrl)
+        session <- html_session(finalUrl)
+        # guardamos los titulos de todos los articulos 
+        listUrl <- list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href'))
+        
+        # miramos si existe la clase de "paginacion-siguiente"
+        # para ver si hay mas titulos. si la longitud es 0, es que 
+        # solo hay una pagina con articulos ese dia 
+        while (length(html_nodes(page, '.paginacion-siguiente')) != 0){
+          nextPage  <- html_nodes(page, '.paginacion-siguiente') %>% html_nodes('a') %>% html_attr('href')
+          page <- jump_to(session, nextPage) %>% read_html()
+          # sacamos los articulos de la nueva pagina y los guardamos en 
+          # la lista listUrl
+          listUrl <- c(listUrl, list(html_nodes(page, '.articulo-titulo') %>% html_nodes('a') %>% html_attr('href')))
+        }
+        
+        return(listUrl) 
+      }
+    },
+    error = function(cond){
+      message(paste("URL does not seem to exist:", url))
+      message("Here's the original error message:")
+      message(cond)
+      # Choose a return value in case of error
+      return(NULL)
+    },
+    warning = function(cond){
+      message(paste("URL caused a warning:", url))
+      message("Here's the original warning message:")
+      message(cond)
+      # Choose a return value in case of warning
+      return(NULL)
     }
-    
-    return(listUrl) 
-  }
+  )
 }
 
 ##################################################################
