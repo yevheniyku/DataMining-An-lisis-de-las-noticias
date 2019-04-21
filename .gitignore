@@ -12,3 +12,9 @@
 \.Rproj\.user/shared/notebooks/
 
 \.Rproj\.user/
+
+data/elpais1970\.xml
+
+data/
+
+\.ipynb_checkpoints/

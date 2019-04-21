@@ -43,9 +43,9 @@ installLibraries <- function(){
   if (!is.installed("cluster")){
     install.packages("cluster")
   }
-  
-  if (!is.installed("jsonlite")){
-    install.packages("jsonlite")
+
+  if (!is.installed("XML")){
+    install.packages("XML")
   }
   
   # llamamos las librerias necesarias
@@ -56,17 +56,36 @@ installLibraries <- function(){
   library(dplyr)
   library(readr)
   library(cluster)
-  library(jsonlite)
+  library(XML)
 }
 
+getTags <- function(tags){
+  cont <- 1
+  tagList <- list(xmlValue(tags[[1]]))
 
-dataLooping<- function(){
-  fd <- openFile()
-  
-  while(length(line <- readLines(fd, n = 1, warn = FALSE)) > 0){
-    while(line != '------'){
-      
-    }
+  while(cont <= length(tags)){
+    tagList[[1]][cont] <- xmlValue(tags[[cont]])
+    cont <- cont + 1
+  }
+  return(tagList)
+}
+
+getData <- function(file){
+  articlesXML = xmlParse(file, encoding = "Spanish")
+  articlesRoot = xmlRoot(articlesXML)
+  articlesList = xmlChildren(articlesRoot)
+  cont <- 1
+  # obtengo todos los datos necesarios de cada articulo
+  while(cont <= 4){
+    article <- articlesList[[cont]]
+    date <- xmlGetAttr(article, name = 'date')
+    childrenArticle <- xmlChildren(article)
+    title <- xmlValue(childrenArticle[[1]])
+    tags <- xmlChildren(childrenArticle[[2]])
+    tagList <- getTags(tags)
+    text <- xmlValue(childrenArticle[[3]])
+    
+    cont <- cont + 1
   }
   
 }
@@ -74,9 +93,10 @@ dataLooping<- function(){
 main <- function(){
   installLibraries()
   
-  jsonData <- fromJSON("data/elpais.json", simplifyDataFrame = TRUE)
+  file <- "./data/elpais1970.xml"
+  getData(file)
   
-  class(jsonData)
+  
   
 }
 

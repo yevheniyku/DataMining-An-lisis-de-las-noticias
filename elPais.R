@@ -153,6 +153,7 @@ getArticles <- function(startDate, endDate){
   while(startDate <= endDate){
     listUrl <- getUrlList(startDate, endDate, urlElPais)
     
+    print(length(listUrl))
     for(i in length(listUrl)){
         lapply(listUrl[[i]], function(x) accessArticle(x, root, startDate))
     }
