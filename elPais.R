@@ -179,11 +179,11 @@ getArticles <- function(startDate, endDate){
 ###########################################################
 managePeriods <- function(){
   #startDate <- as.Date("04-05-1976", format = "%d-%m-%Y")
-  startDate <- as.Date("29-12-1979", format = "%d-%m-%Y")
-  endDate   <- as.Date("31-12-1979", format = "%d-%m-%Y")
-  getArticles(startDate, endDate)
-  #startDate <- as.Date("01-01-1980", format = "%d-%m-%Y")
-  startDate <- as.Date("29-12-1989", format = "%d-%m-%Y")
+  #startDate <- as.Date("29-12-1979", format = "%d-%m-%Y")
+  #endDate   <- as.Date("31-12-1979", format = "%d-%m-%Y")
+  #getArticles(startDate, endDate)
+  startDate <- as.Date("01-01-1980", format = "%d-%m-%Y")
+  #startDate <- as.Date("29-12-1989", format = "%d-%m-%Y")
   endDate   <- as.Date("31-12-1989", format = "%d-%m-%Y")
   getArticles(startDate, endDate)
   startDate <- as.Date("01-01-1990", format = "%d-%m-%Y")
