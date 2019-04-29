@@ -78,24 +78,33 @@ writeXML <- function(xmlFile, actual, endDate){
 accessArticle <- function(url, root, date){
   url <- gsub("//", "https://", url, fixed = TRUE)
   
-  # se accede a la pagina 
-  newSession <- html_session(url)
-  page  <- jump_to(newSession, url)  %>% read_html()
-  
-  # se guardan los datos
-  title <- html_node(page, '.articulo-titulo') %>% html_text
-  text  <- html_node(page, '.articulo-cuerpo') %>% html_text()
-  tag   <- html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text
-  
-  # se crea un nuevo nodo XML para el articulo 
-  articleXML <- newXMLNode("article", parent = root, attrs = c(date = date))
-  newXMLNode("title", title, parent = articleXML)
-  tagList <- newXMLNode("tags", parent = articleXML)
-  lapply(tag, function(x) {
-    newXMLNode("tag", x, parent = tagList)
-  })
-  newXMLNode("text", text, parent = articleXML)
-  
+  out <- tryCatch(
+    {
+      # se accede a la pagina 
+      newSession <- html_session(url)
+      page  <- jump_to(newSession, url)  %>% read_html()
+      # se guardan los datos
+      title <- html_node(page, '.articulo-titulo') %>% html_text
+      text  <- html_node(page, '.articulo-cuerpo') %>% html_text()
+      tag   <- html_node(page, '.listado') %>% html_nodes('li') %>% html_node('a') %>% html_text
+      
+      # se crea un nuevo nodo XML para el articulo 
+      articleXML <- newXMLNode("article", parent = root, attrs = c(date = date))
+      newXMLNode("title", title, parent = articleXML)
+      tagList <- newXMLNode("tags", parent = articleXML)
+      lapply(tag, function(x) {
+        newXMLNode("tag", x, parent = tagList)
+      })
+      newXMLNode("text", text, parent = articleXML)
+    },
+    error = function(cond){
+      message(paste("URL does not seem to exist:", url))
+      message("Here's the original error message:")
+      message(cond)
+      # Choose a return value in case of error
+      return(NA)
+    }
+  )
 }
 
 ###########################################################
