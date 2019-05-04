@@ -4,17 +4,19 @@ from multiprocessing import Process
 def countWords(word):
     count = 0
     # descriptor de fichero calcular numero de palabras
-    check = open('./data/cleanWords1970.txt', 'r')
+    check = open('./data/cleaning/cleanWords1970.txt', 'r')
     for line in check:
         if word in line:
-            count += 1
+            for w in line.strip().split():
+                if(word == w):
+                    count += 1
     check.close()
 
     return count
 
 
 def iterLoops(fr, to):
-    with open('./data/clean1970.txt', 'r') as origin:
+    with open('./data/cleaning/clean1970.txt', 'r') as origin:
         for num, line in enumerate(origin, 0):
             if(num > fr and num >= to):
                 break
@@ -25,7 +27,7 @@ def iterLoops(fr, to):
                 print(word)
                 count = countWords(word)
 
-                with open('./data/articleFrequency.txt', 'a') as result:
+                with open('./data/articleFrequency70.txt', 'a') as result:
                     result.write(word + '\t' + str(count) + '\n')
 
 
