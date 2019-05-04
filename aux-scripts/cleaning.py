@@ -9,7 +9,7 @@ swords = stopwords.words('spanish')
 def addCustomStopwords():
     global swords
     print(len(swords))
-    with open('../data/custom-stopwords.csv', 'r', encoding='utf8') as f:
+    with open('../data/aux/custom-stopwords.csv', 'r', encoding='utf8') as f:
         for line in f:
             new_word = []
             new_word.append(unidecode.unidecode(line.strip()))
@@ -45,14 +45,14 @@ def cleanText(text):
 
 def getText(root):
     print('Empezamos a sacar y limpiar el texto...')
-    with open('../data/cleanWords1970.txt', 'a', encoding='utf8') as file:
+    with open('../data/cleaning/cleanWords1970.txt', 'a', encoding='utf8') as file:
         for child in root:
             ct = cleanText(child[2].text)
             file.write(ct)
 
 def main():
     print('Inicio del script...')
-    tree = ET.parse('../data/elpais1970.xml')
+    tree = ET.parse('../data/original/elpais1970.xml')
     root = tree.getroot()
 
     addCustomStopwords()
