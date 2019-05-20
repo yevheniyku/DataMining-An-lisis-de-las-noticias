@@ -1,26 +1,20 @@
-wordList = []
 
-def iterLoops(origin):
-    global wordList
+class DuplicatesRemover:
+    def __init__(self, decade):
+        self.decade = decade
 
-    for line in origin:
-        words = line.split()
-        for word in words:
-            #removeDuplicated(word)
-            if word not in wordList:
-                wordList.append(word)
+    def removeDuplicated():
+        originFile      = '../../../data/cleaning/articleWordsList/{}.txt'.format(self.decade)
+        destinationFile = '../../../data/cleaning/uniqueArticleWords/{}.txt'.format(self.decade)
+        wordsList       = []
 
-    with open('../data/clean1970.txt', 'a') as f:
-        for word in wordList:
-            f.write(word + '\n')
+        with open(originFile, 'r') as origin:
+            for line in origin:
+                words = line.strip().split()
+                for word in words:
+                    if word not in wordList:
+                        wordList.append(word)
 
-
-def main():
-    fd = open('../data/cleanWords1970.txt', 'r')
-
-    iterLoops(fd)
-
-    fd.close()
-
-if __name__ == '__main__':
-    main()
+        with open(destinyFile, 'a') as destination:
+            for word in wordList:
+                destination.write(word + '\n')

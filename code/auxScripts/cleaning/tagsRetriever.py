@@ -2,6 +2,13 @@ import xml.etree.ElementTree as ET
 import io
 import unidecode
 
+class tagsRetriever:
+    def __init__(self, decade):
+        self.decade = decade
+
+    def getText(decade):
+        originFile = '../../../data/'
+
 t = []
 
 def iterLoops(origin):
